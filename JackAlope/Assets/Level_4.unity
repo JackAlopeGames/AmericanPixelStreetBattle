@@ -15755,7 +15755,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHp: 33
   CurrentHp: 33
+  ExtraHp: 0
   invulnerable: 0
+  Extra: 0
 --- !u!54 &124769823
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18252,7 +18254,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHp: 33
   CurrentHp: 33
+  ExtraHp: 0
   invulnerable: 0
+  Extra: 0
 --- !u!54 &333196738
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18759,7 +18763,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHp: 33
   CurrentHp: 33
+  ExtraHp: 0
   invulnerable: 0
+  Extra: 0
 --- !u!54 &370413454
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -19351,7 +19357,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHp: 33
   CurrentHp: 33
+  ExtraHp: 0
   invulnerable: 0
+  Extra: 0
 --- !u!54 &407227037
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -19601,7 +19609,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHp: 33
   CurrentHp: 33
+  ExtraHp: 0
   invulnerable: 0
+  Extra: 0
 --- !u!54 &410505778
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -23616,7 +23626,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHp: 33
   CurrentHp: 33
+  ExtraHp: 0
   invulnerable: 0
+  Extra: 0
 --- !u!54 &723366064
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -28543,7 +28555,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHp: 33
   CurrentHp: 33
+  ExtraHp: 0
   invulnerable: 0
+  Extra: 0
 --- !u!54 &755970453
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -30379,7 +30393,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHp: 33
   CurrentHp: 33
+  ExtraHp: 0
   invulnerable: 0
+  Extra: 0
 --- !u!54 &880074438
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -36202,7 +36218,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHp: 50
   CurrentHp: 50
+  ExtraHp: 0
   invulnerable: 0
+  Extra: 0
 --- !u!54 &974890929
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -36241,7 +36259,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 974890926}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -65.6, y: 0, z: -0.25}
+  m_LocalPosition: {x: -63.65, y: 0, z: -0.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 74459144}
@@ -37724,7 +37742,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHp: 33
   CurrentHp: 33
+  ExtraHp: 0
   invulnerable: 0
+  Extra: 0
 --- !u!54 &1110504049
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -39464,7 +39484,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHp: 33
   CurrentHp: 33
+  ExtraHp: 0
   invulnerable: 0
+  Extra: 0
 --- !u!54 &1231186562
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -51793,7 +51815,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHp: 33
   CurrentHp: 33
+  ExtraHp: 0
   invulnerable: 0
+  Extra: 0
 --- !u!54 &1430629359
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -54682,7 +54706,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHp: 33
   CurrentHp: 33
+  ExtraHp: 0
   invulnerable: 0
+  Extra: 0
 --- !u!54 &1644813114
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -54828,7 +54854,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 402344, guid: 80cf54b3b2c8e7e43a80c62f98a0fefe, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 402344, guid: 80cf54b3b2c8e7e43a80c62f98a0fefe, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -55726,7 +55752,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHp: 33
   CurrentHp: 33
+  ExtraHp: 0
   invulnerable: 0
+  Extra: 0
 --- !u!54 &1715164253
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -64334,7 +64362,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHp: 33
   CurrentHp: 33
+  ExtraHp: 0
   invulnerable: 0
+  Extra: 0
 --- !u!54 &2027550123
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -64518,7 +64548,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHp: 33
   CurrentHp: 33
+  ExtraHp: 0
   invulnerable: 0
+  Extra: 0
 --- !u!54 &2028573277
 Rigidbody:
   m_ObjectHideFlags: 0

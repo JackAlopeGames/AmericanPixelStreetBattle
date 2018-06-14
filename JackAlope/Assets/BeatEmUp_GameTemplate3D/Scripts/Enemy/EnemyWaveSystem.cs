@@ -176,8 +176,10 @@ public class EnemyWaveSystem : MonoBehaviour {
 			//Show game over screen
 			if (UI != null) {
 				UI.DisableAllScreens ();
+                
 				UI.ShowMenu ("LevelComplete");
-			}
+                GameObject.FindGameObjectWithTag("LevelComplete").GetComponent<LevelCompleteEffect>().refreshnamelevel();
+            }
 		}
 	}
 }

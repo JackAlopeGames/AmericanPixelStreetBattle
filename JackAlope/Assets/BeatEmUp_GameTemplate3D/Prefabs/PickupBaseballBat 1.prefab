@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 54325476534827754}
   - component: {fileID: 114318463254527000}
   m_Layer: 10
-  m_Name: PickupBaseballBat
+  m_Name: PickupBaseballBat 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -114,7 +114,7 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1740607778799176}
-  m_Mesh: {fileID: 4300000, guid: 6878e018999d32047b4db7f228eb1e18, type: 3}
+  m_Mesh: {fileID: 4300000, guid: e737832925b716548a10114c7a5622a2, type: 3}
 --- !u!54 &54325476534827754
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -155,9 +155,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weapon:
     weaponName: BaseballBat
-    playerHandPrefab: {fileID: 1596423937318954, guid: eb12ae988b8d9fc4ba536879b036bc39,
+    playerHandPrefab: {fileID: 1596423937318954, guid: 8246e7cbf0269a44781b50973a0dc868,
       type: 2}
-    WeaponEndState: {fileID: 1241872331814296, guid: 7a80c159a555c164aa993a5d17a03ef5,
+    WeaponEndState: {fileID: 1241872331814296, guid: 1d7de3f50bfd76e47afdf4e833820efa,
       type: 2}
     timesToUse: 3
     degenerateType: 1

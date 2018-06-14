@@ -11,11 +11,11 @@ public class UIFader : MonoBehaviour {
 		if(img != null){
 
 			if (fadeDir == FADE.FadeIn){ 
-				StartCoroutine(FadeCoroutine(2f, 0f, fadeDuration, StartDelay, true));
+				StartCoroutine(FadeCoroutine(2f, 0f, fadeDuration, 0, true));
 			}
 
 			if (fadeDir == FADE.FadeOut){ 
-				StartCoroutine(FadeCoroutine(0f, 1f, fadeDuration, StartDelay, false));
+				StartCoroutine(FadeCoroutine(0f, 1f, fadeDuration, 0, false));
 
 			}
 		}

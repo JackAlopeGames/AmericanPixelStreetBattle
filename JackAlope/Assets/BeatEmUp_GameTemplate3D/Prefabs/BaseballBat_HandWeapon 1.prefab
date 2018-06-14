@@ -37,7 +37,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4751859194716836}
   m_Layer: 0
-  m_Name: BaseballBat_HandWeapon
+  m_Name: BaseballBat_HandWeapon 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -49,13 +49,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1181366139474212}
-  m_LocalRotation: {x: -0, y: 0, z: -0.80385697, w: -0.5948227}
-  m_LocalPosition: {x: -0.09, y: 0.035, z: -0}
+  m_LocalRotation: {x: 0, y: 0, z: 0.1564345, w: 0.98768836}
+  m_LocalPosition: {x: 0.02, y: 0.03, z: 0.04}
   m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
   m_Children: []
   m_Father: {fileID: 4751859194716836}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -253}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 18}
 --- !u!4 &4751859194716836
 Transform:
   m_ObjectHideFlags: 1
@@ -111,4 +111,4 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1181366139474212}
-  m_Mesh: {fileID: 4300000, guid: 6878e018999d32047b4db7f228eb1e18, type: 3}
+  m_Mesh: {fileID: 4300000, guid: e737832925b716548a10114c7a5622a2, type: 3}

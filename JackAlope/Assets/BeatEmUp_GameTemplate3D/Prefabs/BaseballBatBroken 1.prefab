@@ -9,36 +9,36 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1611375829293178}
+  m_RootGameObject: {fileID: 1241872331814296}
   m_IsPrefabParent: 1
---- !u!1 &1611375829293178
+--- !u!1 &1241872331814296
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4055773158081944}
-  - component: {fileID: 65855080699159802}
-  - component: {fileID: 54325476534827754}
-  - component: {fileID: 114318463254527000}
-  m_Layer: 10
-  m_Name: PickupBaseballBat
+  - component: {fileID: 4042391131778238}
+  - component: {fileID: 65589897289502182}
+  - component: {fileID: 54293478869868028}
+  - component: {fileID: 114115394845064256}
+  m_Layer: 0
+  m_Name: BaseballBatBroken 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1740607778799176
+--- !u!1 &1693395176299182
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4671814602666444}
-  - component: {fileID: 33457927185271492}
-  - component: {fileID: 23941239252692728}
+  - component: {fileID: 4430361158911762}
+  - component: {fileID: 33490339572942116}
+  - component: {fileID: 23523054608547400}
   m_Layer: 0
   m_Name: GFX
   m_TagString: Untagged
@@ -46,39 +46,39 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4055773158081944
+--- !u!4 &4042391131778238
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1611375829293178}
-  m_LocalRotation: {x: -0, y: 0.2916803, z: -0, w: 0.9565159}
-  m_LocalPosition: {x: 5, y: 0, z: -1.6}
+  m_GameObject: {fileID: 1241872331814296}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.918, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4671814602666444}
+  - {fileID: 4430361158911762}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 30, z: 0}
---- !u!4 &4671814602666444
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4430361158911762
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1740607778799176}
-  m_LocalRotation: {x: -0.27685204, y: -0.6396014, z: 0.27023566, w: 0.6642558}
-  m_LocalPosition: {x: 0.336, y: 0.038, z: -0.01}
-  m_LocalScale: {x: 0.88, y: 0.88, z: 0.88}
+  m_GameObject: {fileID: 1693395176299182}
+  m_LocalRotation: {x: -0.1464466, y: -0.35355338, z: 0.35355338, w: 0.8535535}
+  m_LocalPosition: {x: -0.09, y: 0.05, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4055773158081944}
+  m_Father: {fileID: 4042391131778238}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -1.2670001, y: -88.365005, z: 45.507004}
---- !u!23 &23941239252692728
+  m_LocalEulerAnglesHint: {x: 0, y: -45, z: 45}
+--- !u!23 &23523054608547400
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1740607778799176}
+  m_GameObject: {fileID: 1693395176299182}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -88,7 +88,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 3d069c114033d844987b9eeb949abb59, type: 2}
+  - {fileID: 2100000, guid: 050b781f6cc0a3c49ac60be261b1e740, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -108,19 +108,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33457927185271492
+--- !u!33 &33490339572942116
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1740607778799176}
-  m_Mesh: {fileID: 4300000, guid: 6878e018999d32047b4db7f228eb1e18, type: 3}
---- !u!54 &54325476534827754
+  m_GameObject: {fileID: 1693395176299182}
+  m_Mesh: {fileID: 4300000, guid: e737832925b716548a10114c7a5622a2, type: 3}
+--- !u!54 &54293478869868028
 Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1611375829293178}
+  m_GameObject: {fileID: 1241872331814296}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -128,55 +128,35 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 122
+  m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &65855080699159802
+--- !u!65 &65589897289502182
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1611375829293178}
+  m_GameObject: {fileID: 1241872331814296}
   m_Material: {fileID: 13400000, guid: d123f6c1ac9a3e347a4515bb5a4485a0, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.5, y: 0.1, z: 0.1}
-  m_Center: {x: 0, y: 0.045, z: 0}
---- !u!114 &114318463254527000
+  m_Size: {x: 1, y: 0.07, z: 0.2}
+  m_Center: {x: -0.2811581, y: 0.03369309, z: -0.040175498}
+--- !u!114 &114115394845064256
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1611375829293178}
+  m_GameObject: {fileID: 1241872331814296}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: efddfbdf85d73c5448fed29aaeb0fb52, type: 3}
+  m_Script: {fileID: 11500000, guid: 465270fbb0be33d4892d62bc47708472, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weapon:
-    weaponName: BaseballBat
-    playerHandPrefab: {fileID: 1596423937318954, guid: eb12ae988b8d9fc4ba536879b036bc39,
-      type: 2}
-    WeaponEndState: {fileID: 1241872331814296, guid: 7a80c159a555c164aa993a5d17a03ef5,
-      type: 2}
-    timesToUse: 3
-    degenerateType: 1
-    damageObject:
-      animTrigger: SwingWeapon
-      damage: 6
-      duration: 0.5
-      comboResetTime: 0
-      hitSFX: BaseballBatHit
-      knockDown: 1
-      slowMotionEffect: 0
-      DefenceOverride: 1
-      isGroundAttack: 0
-      CollSize: 2
-      collDistance: 1
-      collHeight: 1
-      inflictor: {fileID: 0}
-    useSound: 
-    breakSound: BaseballBatBreak
-  SFX: ItemPickup
-  pickupEffect: {fileID: 0}
-  pickUpRange: 1
+  pauzeBeforeStart: 0
+  flickerSpeedStart: 15
+  flickerSpeedEnd: 35
+  Duration: 2
+  DestroyOnFinish: 1
+  GFX:
+  - {fileID: 1693395176299182}

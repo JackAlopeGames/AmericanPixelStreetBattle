@@ -15,6 +15,13 @@ TagManager:
   - GodRay
   - VFX
   - ITEMS
+  - ExtraCheker
+  - SpawnPoint
+  - Controlls
+  - BossWarn
+  - ExtraHealth
+  - LevelComplete
+  - ContinueButton
   layers:
   - Default
   - TransparentFX

@@ -18,8 +18,10 @@ public class PlayAd : MonoBehaviour
     AdColony.InterstitialAd _ad = null;
     public GameObject oldplayer, hud, healthbar, controls, gameoverscreen, enemies;
 
+    
     public void WatchADs()
     {
+        
         rand = Random.Range(0, 3);
 
 #if UNITY_ANDROID
@@ -168,11 +170,16 @@ public class PlayAd : MonoBehaviour
             RequestAdReward();
             PlayAdv();
         }
-          
-#endif
 
+#endif
     }
-    
+    IEnumerator waitMe()
+    {
+        yield return new WaitForSeconds(1f);
+        /*Debug.Log("Player gain 5 GEMS");
+        go = GameObject.FindGameObjectWithTag("GameOver");
+        go.GetComponent<GameOverScrn>().RestartLevel();*/
+    }
     IEnumerator restarWait()
     {
         yield return new WaitForSeconds(1f);
@@ -273,7 +280,7 @@ public class PlayAd : MonoBehaviour
          AdColony.AppOptions appOptions = new AdColony.AppOptions();
 
          appOptions.UserId = "JackAlope";
-         appOptions.AdOrientation = AdColony.AdOrientationType.AdColonyOrientationAll;
+         appOptions.AdOrientation = AdColony.AdOrientationType.AdColonyOrientationLandscape;
          if (Application.platform == RuntimePlatform.Android ||
          Application.platform == RuntimePlatform.IPhonePlayer )
          {
@@ -318,6 +325,14 @@ public class PlayAd : MonoBehaviour
          {
              AdColony.Ads.ShowAd(_ad);
             StartCoroutine(restarWait());
+        }else
+        {
+            if (Advertisement.IsReady())
+            {
+                Advertisement.Initialize("2586763");
+                //   Debug.Log(Advertisement.gameId);
+                Advertisement.Show("rewardedVideo", new ShowOptions() { resultCallback = HandleAdResult });
+            }
         }
      }
 
@@ -391,11 +406,9 @@ public class PlayAd : MonoBehaviour
                 catch { }
             }
             yield return new WaitForSeconds(1);
-            for (int i=0; i<2; i++)
-            {
-                yield return new WaitForSeconds(1);
-                this.Counter.text = int.Parse(this.Counter.text) -1 + "";
-            }
+            this.Counter.text = "2";
+            yield return new WaitForSeconds(1);
+            this.Counter.text = "1";
             yield return new WaitForSeconds(1);
             this.Counter.text = "¡GO!";
             yield return new WaitForSeconds(1);
@@ -412,5 +425,6 @@ public class PlayAd : MonoBehaviour
             }
         }
         this.Counter.gameObject.SetActive(false);
+      
     }
 }

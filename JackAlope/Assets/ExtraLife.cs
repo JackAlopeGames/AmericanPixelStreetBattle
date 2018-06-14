@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class ExtraLife : MonoBehaviour {
 
@@ -15,7 +17,36 @@ public class ExtraLife : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
+        if (!SceneManager.GetSceneByName("MainMenu").isLoaded && extra)
+        {
+            try
+            {
+                if (this.ThePlayer.gameObject == null)
+                {
 
+                    this.ThePlayer = GameObject.FindGameObjectWithTag("Player");
+
+
+
+                    if (extra)
+                    {
+                        UpdateExtra();
+                    }
+                }
+                if (this.ExtraBar.gameObject == null)
+                {
+
+                    this.ExtraBar = GameObject.FindGameObjectWithTag("ExtraHealth");
+
+
+                    if (extra)
+                    {
+                        UpdateExtra();
+                    }
+                }
+            }
+            catch { }
+        }
     }
 
     public void ExtraLifeActivated()
@@ -25,6 +56,7 @@ public class ExtraLife : MonoBehaviour {
 
     public void UpdateExtra()
     {
+        StartCoroutine(findUI());
         if (extra)
         {
             this.ThePlayer.GetComponent<HealthSystem>().ExtraHp = 20;
@@ -32,14 +64,21 @@ public class ExtraLife : MonoBehaviour {
             this.ThePlayer.GetComponent<HealthSystem>().invulnerable = true;
 
             this.ThePlayer.GetComponent<HealthSystem>().Extra = true;
-            this.ExtraBar.SetActive(true);
+            try
+            {
+                this.ExtraBar.SetActive(true);
+            }
+            catch { }
         }
         else
         {
             this.ThePlayer.GetComponent<HealthSystem>().Extra = false;
             this.ExtraBar.SetActive(false);
         }
+     
     } 
+
+    
     IEnumerator findUI()
     {
         yield return new WaitForSeconds(1);
@@ -52,12 +91,14 @@ public class ExtraLife : MonoBehaviour {
                 this.ThePlayer.GetComponent<HealthSystem>().ExtraHp = 20;
                 this.ThePlayer.GetComponent<HealthSystem>().invulnerable = true;
                 this.ThePlayer.GetComponent<HealthSystem>().Extra = true;
-                this.ExtraBar.SetActive(true);
+                this.ExtraBar.transform.GetChild(0).GetComponent<Image>().enabled = true;
+                this.ExtraBar.transform.GetChild(1).GetChild(0).GetComponent<Image>().enabled = true;
             }
             else
             {
                 this.ThePlayer.GetComponent<HealthSystem>().Extra = false;
-                this.ExtraBar.SetActive(false);
+                this.ExtraBar.transform.GetChild(0).GetComponent<Image>().enabled = false;
+                this.ExtraBar.transform.GetChild(1).GetChild(0).GetComponent<Image>().enabled = false;
             }
         }
         catch

@@ -5,18 +5,15 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/BeatEmUp_GameTemplate3D/CharacterSelection.unity
-    guid: 895da8ebfcc7db945a943c9d47368e12
-  - enabled: 0
-    path: Assets/BeatEmUp_GameTemplate3D/Game.unity
-    guid: d227430363a1a304083936541327e3b7
-  - enabled: 0
+  - enabled: 1
     path: Assets/MainMenu.unity
     guid: a9384de100b136a41a00d869426bd211
-  - enabled: 1
-    path: Assets/MainMenu 1.unity
+  - enabled: 0
+    path: Assets/MainMenu1.unity
     guid: 792dab2f5bb6fe74da35b0bca7f38a08
+  - enabled: 0
+    path: Assets/CharSelect.unity
+    guid: 58f9f47b3f500804e9000fa8c6deb935
   - enabled: 1
     path: Assets/PhaseOne.unity
     guid: 614ed52cb37ea174696c72d4002a07d5

@@ -16,7 +16,11 @@ public class GameOverScrn : MonoBehaviour
 
     private void OnEnable()
     {
-        this.button = butto.GetComponent<Image>();
+        try
+        {
+            this.button = butto.GetComponent<Image>();
+        }
+        catch { }
         /*enemies = GameObject.FindGameObjectWithTag("Enemies");
         this.enemies.SetActive(false);*/
         try
@@ -51,7 +55,11 @@ public class GameOverScrn : MonoBehaviour
             text.color = ColorTransition.Evaluate(t);
 
             float t2 = Mathf.PingPong(Time.time * (speed/2), 1f);
-            button.color = ColorTransition.Evaluate(t2);
+            try
+            {
+                button.color = ColorTransition.Evaluate(t2);
+            }
+            catch { }
         }
 
         //alternative input events

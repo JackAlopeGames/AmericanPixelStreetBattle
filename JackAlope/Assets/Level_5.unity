@@ -2627,7 +2627,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHp: 60
   CurrentHp: 60
+  ExtraHp: 0
   invulnerable: 0
+  Extra: 0
 --- !u!54 &183248376
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2666,7 +2668,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 183248373}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -65.6, y: 0, z: -0.25}
+  m_LocalPosition: {x: -64.43, y: 0, z: -0.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 534679749}
@@ -9992,7 +9994,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHp: 35
   CurrentHp: 35
+  ExtraHp: 0
   invulnerable: 0
+  Extra: 0
 --- !u!54 &388201475
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10419,7 +10423,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHp: 35
   CurrentHp: 35
+  ExtraHp: 0
   invulnerable: 0
+  Extra: 0
 --- !u!54 &420384322
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -21959,7 +21965,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHp: 35
   CurrentHp: 35
+  ExtraHp: 0
   invulnerable: 0
+  Extra: 0
 --- !u!54 &584889676
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -33698,7 +33706,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHp: 35
   CurrentHp: 35
+  ExtraHp: 0
   invulnerable: 0
+  Extra: 0
 --- !u!54 &784577637
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -34322,7 +34332,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 479332, guid: f80f8dcaabb29ce42b92ee3abd4fb18c, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 479332, guid: f80f8dcaabb29ce42b92ee3abd4fb18c, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -35130,7 +35140,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHp: 35
   CurrentHp: 35
+  ExtraHp: 0
   invulnerable: 0
+  Extra: 0
 --- !u!54 &921395314
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -35805,7 +35817,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHp: 35
   CurrentHp: 35
+  ExtraHp: 0
   invulnerable: 0
+  Extra: 0
 --- !u!54 &979234683
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -42705,7 +42719,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHp: 35
   CurrentHp: 35
+  ExtraHp: 0
   invulnerable: 0
+  Extra: 0
 --- !u!54 &1130657440
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -43606,7 +43622,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHp: 35
   CurrentHp: 35
+  ExtraHp: 0
   invulnerable: 0
+  Extra: 0
 --- !u!54 &1220515037
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -43893,7 +43911,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHp: 35
   CurrentHp: 35
+  ExtraHp: 0
   invulnerable: 0
+  Extra: 0
 --- !u!54 &1255139212
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -44747,7 +44767,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHp: 35
   CurrentHp: 35
+  ExtraHp: 0
   invulnerable: 0
+  Extra: 0
 --- !u!54 &1316041466
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -48337,7 +48359,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHp: 35
   CurrentHp: 35
+  ExtraHp: 0
   invulnerable: 0
+  Extra: 0
 --- !u!54 &1616884465
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -48854,7 +48878,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHp: 35
   CurrentHp: 35
+  ExtraHp: 0
   invulnerable: 0
+  Extra: 0
 --- !u!54 &1657015509
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -49440,7 +49466,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHp: 35
   CurrentHp: 35
+  ExtraHp: 0
   invulnerable: 0
+  Extra: 0
 --- !u!54 &1685456037
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -49775,7 +49803,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHp: 35
   CurrentHp: 35
+  ExtraHp: 0
   invulnerable: 0
+  Extra: 0
 --- !u!54 &1706974406
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -50258,7 +50288,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHp: 35
   CurrentHp: 35
+  ExtraHp: 0
   invulnerable: 0
+  Extra: 0
 --- !u!54 &1762932757
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -50683,7 +50715,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHp: 35
   CurrentHp: 35
+  ExtraHp: 0
   invulnerable: 0
+  Extra: 0
 --- !u!54 &1792454638
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -24,7 +24,7 @@ public class JustPlayAd : MonoBehaviour
         {
             if (Advertisement.IsReady())
             {
-                Advertisement.Initialize("2619560");
+                Advertisement.Initialize("2586763");
                 Debug.Log(Advertisement.gameId);
                 Advertisement.Show("rewardedVideo", new ShowOptions() { resultCallback = HandleAdResult });
             }
@@ -57,7 +57,7 @@ public class JustPlayAd : MonoBehaviour
 
                     // No ad is available.  Perform failover logic...
                     AppLovin.LoadRewardedInterstitial();
-                    SceneManager.LoadScene("PhaseOne");
+                    LoadNextLevel();
                     /*Debug.Log("Player gain 5 GEMS");
                     go = GameObject.FindGameObjectWithTag("GameOver");
                     go.GetComponent<GameOverScrn>().RestartLevel();*/
@@ -105,7 +105,7 @@ public class JustPlayAd : MonoBehaviour
                 {
                     HZIncentivizedAd.Fetch();
                     Debug.Log("Player gain 5 GEMS");
-                    SceneManager.LoadScene("PhaseOne");
+                    LoadNextLevel();
                     // The user has watched the entire video and should be given a reward.
                 }
                 if (adState.Equals("incentivized_result_incomplete"))
@@ -170,7 +170,7 @@ public class JustPlayAd : MonoBehaviour
     IEnumerator restarWait()
     {
         yield return new WaitForSeconds(1f);
-        SceneManager.LoadScene("PhaseOne");
+        LoadNextLevel();
         /*Debug.Log("Player gain 5 GEMS");
         go = GameObject.FindGameObjectWithTag("GameOver");
         go.GetComponent<GameOverScrn>().RestartLevel();*/
@@ -191,7 +191,7 @@ public class JustPlayAd : MonoBehaviour
         {
             // A rewarded video has been closed.  Preload the next rewarded video.
             AppLovin.LoadRewardedInterstitial("c90f0b1ccbd02983");
-            SceneManager.LoadScene("PhaseOne");
+            LoadNextLevel();
 
             /*Debug.Log("Player gain 5 GEMS");
             go = GameObject.FindGameObjectWithTag("GameOver");
@@ -230,7 +230,7 @@ public class JustPlayAd : MonoBehaviour
         switch (result)
         {
             case ShowResult.Finished:
-                SceneManager.LoadScene("PhaseOne");
+                LoadNextLevel();
 
                 break;
             case ShowResult.Skipped:
@@ -287,7 +287,7 @@ public class JustPlayAd : MonoBehaviour
 
         AdColony.Ads.OnRewardGranted += (string zoneId, bool success, string name, int amount) =>
         {
-            SceneManager.LoadScene("PhaseOne");
+            LoadNextLevel();
             //gameoverfunctions.GetComponent<GameOverScrn>().RestartLevel();
         };
     }
@@ -340,5 +340,37 @@ public class JustPlayAd : MonoBehaviour
         Debug.Log("Video playback completed.");
     }
 
+
+    public void LoadNextLevel()
+    {
+        if (SceneManager.GetSceneByName("MainMenu").isLoaded)
+        {
+            SceneManager.LoadScene("PhaseOne");
+        }
+        else if (SceneManager.GetSceneByName("PhaseOne").isLoaded)
+        {
+            SceneManager.LoadScene("Level_1");
+        }
+        else if (SceneManager.GetSceneByName("Level_1").isLoaded)
+        {
+            SceneManager.LoadScene("Level_2");
+        }
+        else if (SceneManager.GetSceneByName("Level_2").isLoaded)
+        {
+            SceneManager.LoadScene("Level_3");
+        }
+        else if (SceneManager.GetSceneByName("Level_3").isLoaded)
+        {
+            SceneManager.LoadScene("Level_4");
+        }
+        else if (SceneManager.GetSceneByName("Level_4").isLoaded)
+        {
+            SceneManager.LoadScene("Level_5");
+        }
+        else if (SceneManager.GetSceneByName("Level_5").isLoaded)
+        {
+            SceneManager.LoadScene("MainMenu");
+        }
+    }
    
 }

@@ -283,7 +283,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHp: 30
   CurrentHp: 30
+  ExtraHp: 0
   invulnerable: 0
+  Extra: 0
 --- !u!54 &12703431
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1375,7 +1377,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHp: 30
   CurrentHp: 30
+  ExtraHp: 0
   invulnerable: 0
+  Extra: 0
 --- !u!54 &88872863
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2631,7 +2635,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHp: 30
   CurrentHp: 30
+  ExtraHp: 0
   invulnerable: 0
+  Extra: 0
 --- !u!54 &183038934
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15713,7 +15719,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHp: 30
   CurrentHp: 30
+  ExtraHp: 0
   invulnerable: 0
+  Extra: 0
 --- !u!54 &476845173
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16567,7 +16575,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 540311077}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -65.6, y: 0, z: -0.25}
+  m_LocalPosition: {x: -63.14, y: 0, z: -0.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1732072655}
@@ -16692,7 +16700,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHp: 48
   CurrentHp: 48
+  ExtraHp: 0
   invulnerable: 0
+  Extra: 0
 --- !u!54 &540311081
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17741,7 +17751,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHp: 30
   CurrentHp: 30
+  ExtraHp: 0
   invulnerable: 0
+  Extra: 0
 --- !u!54 &624039423
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17925,7 +17937,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHp: 30
   CurrentHp: 30
+  ExtraHp: 0
   invulnerable: 0
+  Extra: 0
 --- !u!54 &625853571
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18785,7 +18799,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHp: 30
   CurrentHp: 30
+  ExtraHp: 0
   invulnerable: 0
+  Extra: 0
 --- !u!54 &673672733
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -19144,7 +19160,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHp: 30
   CurrentHp: 30
+  ExtraHp: 0
   invulnerable: 0
+  Extra: 0
 --- !u!54 &693840027
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -20486,7 +20504,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHp: 30
   CurrentHp: 30
+  ExtraHp: 0
   invulnerable: 0
+  Extra: 0
 --- !u!54 &765146157
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -21082,7 +21102,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHp: 30
   CurrentHp: 30
+  ExtraHp: 0
   invulnerable: 0
+  Extra: 0
 --- !u!54 &803951542
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -22198,7 +22220,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHp: 30
   CurrentHp: 30
+  ExtraHp: 0
   invulnerable: 0
+  Extra: 0
 --- !u!54 &922830094
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -28025,7 +28049,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHp: 30
   CurrentHp: 30
+  ExtraHp: 0
   invulnerable: 0
+  Extra: 0
 --- !u!54 &1024922422
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -28522,7 +28548,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHp: 30
   CurrentHp: 30
+  ExtraHp: 0
   invulnerable: 0
+  Extra: 0
 --- !u!54 &1074525639
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -28561,7 +28589,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1074525636}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -64.31, y: 0, z: -2.09}
+  m_LocalPosition: {x: -63.07, y: 0, z: 2.76}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1280190075}
@@ -34568,7 +34596,7 @@ Transform:
   - {fileID: 764632114}
   - {fileID: 2014517001}
   m_Father: {fileID: 1413315071}
-  m_RootOrder: 104
+  m_RootOrder: 73
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1244068507
 MonoBehaviour:
@@ -41719,14 +41747,15 @@ Transform:
   - {fileID: 304244617}
   - {fileID: 1814750284}
   - {fileID: 1145861506}
+  - {fileID: 1244068506}
   - {fileID: 1459172407}
   - {fileID: 1119324223}
   - {fileID: 161888312}
   - {fileID: 1775294843}
-  - {fileID: 950137651}
   - {fileID: 970184980}
   - {fileID: 765254822}
   - {fileID: 1798798490}
+  - {fileID: 950137651}
   - {fileID: 1015352285}
   - {fileID: 667276435}
   - {fileID: 1562248573}
@@ -41750,7 +41779,6 @@ Transform:
   - {fileID: 237646040}
   - {fileID: 1176916212}
   - {fileID: 168453488}
-  - {fileID: 1244068506}
   - {fileID: 1390037539}
   - {fileID: 2124860493}
   - {fileID: 1820597386}
@@ -42923,7 +42951,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHp: 30
   CurrentHp: 30
+  ExtraHp: 0
   invulnerable: 0
+  Extra: 0
 --- !u!54 &1498818403
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -51464,7 +51494,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4de3c7afc6b29f344980459d47fb7f76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxAttackers: 5
+  MaxAttackers: 6
   isAbossOnLevel: 1
   EnemyWaves:
   - WaveName: Wave1
@@ -62751,7 +62781,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHp: 30
   CurrentHp: 30
+  ExtraHp: 0
   invulnerable: 0
+  Extra: 0
 --- !u!54 &1990239859
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -64434,7 +64466,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 482920, guid: ca666658ba812434682fa3a7c12cb826, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 482920, guid: ca666658ba812434682fa3a7c12cb826, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
