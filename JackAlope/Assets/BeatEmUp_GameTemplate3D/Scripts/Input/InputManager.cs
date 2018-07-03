@@ -43,8 +43,9 @@ public class InputManager : MonoBehaviour {
 		#if UNITY_IOS || UNITY_ANDROID
 			UseTouchScreenInput = true;
 			UseKeyboardInput = UseJoypadInput = false;
-		#endif
-	}
+           // UseKeyboardInput = true;
+        #endif
+    }
 
 	public static void InputEvent(Vector2 dir){
 		if( onInputEvent != null) onInputEvent(dir);

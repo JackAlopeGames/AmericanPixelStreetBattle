@@ -22,6 +22,18 @@ TagManager:
   - ExtraHealth
   - LevelComplete
   - ContinueButton
+  - ScoreSystem
+  - FinalScore
+  - PoiintsManager
+  - AudioPlayer
+  - Music
+  - ScoreRewardWindow
+  - isMusic
+  - AdWeapon
+  - GunIsAvailable
+  - EnergyBar
+  - PlayerSP
+  - FireSP
   layers:
   - Default
   - TransparentFX

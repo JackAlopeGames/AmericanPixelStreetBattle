@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1356962700541888}
+  m_IsPrefabParent: 1
+--- !u!1 &1356962700541888
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4379341370567402}
+  - component: {fileID: 114427328453952804}
+  m_Layer: 0
+  m_Name: ChangeMusic
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4379341370567402
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1356962700541888}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.660132, y: -4.739249, z: -5.098093}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114427328453952804
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1356962700541888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2178eebd5100aac41a1849a90dd276eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Songs:
+  - {fileID: 8300000, guid: 79862e4804634024482dd6c1c91587e1, type: 3}
+  - {fileID: 8300000, guid: e35664edcae75da49a1006143f507759, type: 3}
+  - {fileID: 8300000, guid: 04f509718fd2d74458d869f5cb9390e6, type: 3}
+  - {fileID: 8300000, guid: ac859dcc14e61374a82d2e5a07f74ef7, type: 3}
+  - {fileID: 8300000, guid: 07dfd7886b8f58c4b812c1e186882d9f, type: 3}
+  - {fileID: 8300000, guid: 98d7336d78d33fc48b7829091fde7504, type: 3}
+  - {fileID: 8300000, guid: a2b2787e945fad140a8ac0659f14dad2, type: 3}
+  - {fileID: 8300000, guid: 26511c3a812cf864fbec50d289a0496b, type: 3}
+  AudioSource: {fileID: 0}

@@ -17,8 +17,7 @@ public class EnemyWaveSystem : MonoBehaviour {
 	[Header ("Load level On Finish")]
 	public bool loadNewLevel;
 	public string levelName;
-
-	void OnEnable(){
+    void OnEnable(){
 		EnemyActions.OnUnitDestroy += onUnitDestroy;
 	}
 
@@ -104,7 +103,7 @@ public class EnemyWaveSystem : MonoBehaviour {
 			EnemyWaves[currentWave].RemoveEnemyFromWave(g);
 			if(EnemyWaves[currentWave].waveComplete()){
 				currentWave += 1;
-				if(!allWavesCompleted()){ 
+				if(!allWavesCompleted()){
 					UpdateAreaColliders();
 				} else{
 					StartCoroutine (LevelComplete());
@@ -116,7 +115,7 @@ public class EnemyWaveSystem : MonoBehaviour {
 			}
 		}
 	}
-
+    
 	//True if all the waves are completed
 	bool allWavesCompleted(){
 		int waveCount = EnemyWaves.Length;
@@ -178,7 +177,7 @@ public class EnemyWaveSystem : MonoBehaviour {
 				UI.DisableAllScreens ();
                 
 				UI.ShowMenu ("LevelComplete");
-                GameObject.FindGameObjectWithTag("LevelComplete").GetComponent<LevelCompleteEffect>().refreshnamelevel();
+                
             }
 		}
 	}

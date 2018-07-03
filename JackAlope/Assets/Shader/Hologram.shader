@@ -8,7 +8,7 @@
 	_Lines("Lines", 2D) = "white" {}
 	_Color("Hologram Color", Color) = (0,0,1)
 		_RimPower("Rim Power", Range(0,6)) = 0.5
-		_RimColor("Color", Color) = (1,1,1,1)
+		_RimColor("Rim Color", Color) = (1,1,1,1)
 	}
 
 		SubShader

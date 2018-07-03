@@ -2528,38 +2528,25 @@ MonoBehaviour:
   rb: {fileID: 183248376}
   capsule: {fileID: 183248377}
   AttackList:
-  - animTrigger: Attack1
+  - animTrigger: BossAttack5
+    damage: 4
+    duration: 1.5
+    comboResetTime: 0.5
+    hitSFX: DefaultHit
+    knockDown: 1
+    slowMotionEffect: 1
+    DefenceOverride: 0
+    isGroundAttack: 0
+    CollSize: 1
+    collDistance: 0.8
+    collHeight: 1.4
+    inflictor: {fileID: 0}
+  - animTrigger: BossAttack5_1
     damage: 3
-    duration: 1
+    duration: 3
     comboResetTime: 0.5
     hitSFX: DefaultHit
-    knockDown: 0
-    slowMotionEffect: 1
-    DefenceOverride: 0
-    isGroundAttack: 0
-    CollSize: 1
-    collDistance: 0.8
-    collHeight: 1.4
-    inflictor: {fileID: 0}
-  - animTrigger: Attack2
-    damage: 4
-    duration: 1
-    comboResetTime: 0.5
-    hitSFX: DefaultHit
-    knockDown: 0
-    slowMotionEffect: 1
-    DefenceOverride: 0
-    isGroundAttack: 0
-    CollSize: 1
-    collDistance: 0.8
-    collHeight: 1.4
-    inflictor: {fileID: 0}
-  - animTrigger: Attack3
-    damage: 4
-    duration: 1
-    comboResetTime: 0.5
-    hitSFX: DefaultHit
-    knockDown: 0
+    knockDown: 1
     slowMotionEffect: 1
     DefenceOverride: 0
     isGroundAttack: 0
@@ -2568,7 +2555,7 @@ MonoBehaviour:
     collHeight: 1.4
     inflictor: {fileID: 0}
   PickRandomAttack: 1
-  hitZRange: 2
+  hitZRange: 3
   defendChance: 80
   hitRecoveryTime: 0.4
   standUpTime: 0.8
@@ -2580,19 +2567,19 @@ MonoBehaviour:
   pickARandomName: 0
   enemyNamesList: {fileID: 4900000, guid: 48faffacd763b514599640f2b52243d2, type: 3}
   enemyName: 'Boss: Rambo'
-  attackRangeDistance: 1.2
-  closeRangeDistance: 2.4
+  attackRangeDistance: 0.9
+  closeRangeDistance: 4
   midRangeDistance: 3.5
   farRangeDistance: 4.5
   RangeMarging: 1
-  walkSpeed: 1.2
-  walkBackwardSpeed: 1.2
+  walkSpeed: 1.8
+  walkBackwardSpeed: 1.61
   sightDistance: 100
-  attackInterval: 0
-  rotationSpeed: 10
+  attackInterval: 0.5
+  rotationSpeed: 15
   lookaheadDistance: 0.4
   ignoreCliffs: 0
-  KnockdownTimeout: 1.5
+  KnockdownTimeout: 0.8
   KnockdownUpForce: 4
   KnockbackForce: 3
   CollisionLayer:
@@ -9587,10 +9574,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LevelMusic: Music
   showMenuAtStart: HUD
-  playMusic: 1
+  playMusic: 0
   createUI: 1
   createInputManager: 1
-  createAudioPlayer: 1
+  createAudioPlayer: 0
   createGameCamera: 1
 --- !u!4 &368878805
 Transform:
@@ -9947,8 +9934,8 @@ MonoBehaviour:
   pickARandomName: 1
   enemyNamesList: {fileID: 4900000, guid: 48faffacd763b514599640f2b52243d2, type: 3}
   enemyName: 
-  attackRangeDistance: 1.4
-  closeRangeDistance: 2.4
+  attackRangeDistance: 0.9
+  closeRangeDistance: 4
   midRangeDistance: 3.5
   farRangeDistance: 4.5
   RangeMarging: 1
@@ -10376,8 +10363,8 @@ MonoBehaviour:
   pickARandomName: 1
   enemyNamesList: {fileID: 4900000, guid: 48faffacd763b514599640f2b52243d2, type: 3}
   enemyName: 
-  attackRangeDistance: 1.4
-  closeRangeDistance: 2.4
+  attackRangeDistance: 0.9
+  closeRangeDistance: 4
   midRangeDistance: 3.5
   farRangeDistance: 4.5
   RangeMarging: 1
@@ -10565,12 +10552,17 @@ Prefab:
     - target: {fileID: 114225054467775110, guid: d78222c3bb408be4d96a254010874f9e,
         type: 2}
       propertyPath: attackRangeDistance
-      value: 1.4
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 114225054467775110, guid: d78222c3bb408be4d96a254010874f9e,
         type: 2}
       propertyPath: sightDistance
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 114225054467775110, guid: d78222c3bb408be4d96a254010874f9e,
+        type: 2}
+      propertyPath: closeRangeDistance
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d78222c3bb408be4d96a254010874f9e, type: 2}
@@ -21918,8 +21910,8 @@ MonoBehaviour:
   pickARandomName: 1
   enemyNamesList: {fileID: 4900000, guid: 48faffacd763b514599640f2b52243d2, type: 3}
   enemyName: 
-  attackRangeDistance: 1.4
-  closeRangeDistance: 2.4
+  attackRangeDistance: 0.9
+  closeRangeDistance: 4
   midRangeDistance: 3.5
   farRangeDistance: 4.5
   RangeMarging: 1
@@ -27470,11 +27462,16 @@ Prefab:
     - target: {fileID: 114225054467775110, guid: d78222c3bb408be4d96a254010874f9e,
         type: 2}
       propertyPath: attackRangeDistance
-      value: 1.4
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 1939893826906624, guid: d78222c3bb408be4d96a254010874f9e, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114225054467775110, guid: d78222c3bb408be4d96a254010874f9e,
+        type: 2}
+      propertyPath: closeRangeDistance
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d78222c3bb408be4d96a254010874f9e, type: 2}
@@ -28170,7 +28167,7 @@ MonoBehaviour:
     type: 2}
   orientToImpactDir: 1
   spawnItem: {fileID: 1448244365320500, guid: 4bdf5d1286d0b71438ccfa7edfda52eb, type: 2}
-  spawnChance: 0
+  spawnChance: 10
   destroyOnHit: 1
 --- !u!136 &738951637
 CapsuleCollider:
@@ -33659,8 +33656,8 @@ MonoBehaviour:
   pickARandomName: 1
   enemyNamesList: {fileID: 4900000, guid: 48faffacd763b514599640f2b52243d2, type: 3}
   enemyName: 
-  attackRangeDistance: 1.4
-  closeRangeDistance: 2.4
+  attackRangeDistance: 0.9
+  closeRangeDistance: 4
   midRangeDistance: 3.5
   farRangeDistance: 4.5
   RangeMarging: 1
@@ -35093,8 +35090,8 @@ MonoBehaviour:
   pickARandomName: 1
   enemyNamesList: {fileID: 4900000, guid: 48faffacd763b514599640f2b52243d2, type: 3}
   enemyName: 
-  attackRangeDistance: 1.4
-  closeRangeDistance: 2.4
+  attackRangeDistance: 0.9
+  closeRangeDistance: 4
   midRangeDistance: 3.5
   farRangeDistance: 4.5
   RangeMarging: 1
@@ -35770,8 +35767,8 @@ MonoBehaviour:
   pickARandomName: 1
   enemyNamesList: {fileID: 4900000, guid: 48faffacd763b514599640f2b52243d2, type: 3}
   enemyName: 
-  attackRangeDistance: 1.4
-  closeRangeDistance: 2.4
+  attackRangeDistance: 0.9
+  closeRangeDistance: 4
   midRangeDistance: 3.5
   farRangeDistance: 4.5
   RangeMarging: 1
@@ -42672,8 +42669,8 @@ MonoBehaviour:
   pickARandomName: 1
   enemyNamesList: {fileID: 4900000, guid: 48faffacd763b514599640f2b52243d2, type: 3}
   enemyName: 
-  attackRangeDistance: 1.4
-  closeRangeDistance: 2.4
+  attackRangeDistance: 0.9
+  closeRangeDistance: 4
   midRangeDistance: 3.5
   farRangeDistance: 4.5
   RangeMarging: 1
@@ -43575,8 +43572,8 @@ MonoBehaviour:
   pickARandomName: 1
   enemyNamesList: {fileID: 4900000, guid: 48faffacd763b514599640f2b52243d2, type: 3}
   enemyName: Nico
-  attackRangeDistance: 1.4
-  closeRangeDistance: 2.4
+  attackRangeDistance: 0.9
+  closeRangeDistance: 4
   midRangeDistance: 3.5
   farRangeDistance: 4.5
   RangeMarging: 1
@@ -43864,8 +43861,8 @@ MonoBehaviour:
   pickARandomName: 1
   enemyNamesList: {fileID: 4900000, guid: 48faffacd763b514599640f2b52243d2, type: 3}
   enemyName: 
-  attackRangeDistance: 1.4
-  closeRangeDistance: 2.4
+  attackRangeDistance: 0.9
+  closeRangeDistance: 4
   midRangeDistance: 3.5
   farRangeDistance: 4.5
   RangeMarging: 1
@@ -44205,6 +44202,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delta: 3
   speed: 0.5
+--- !u!1001 &1267359314
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4379341370567402, guid: e3b40ebede903ec49b49ad94465f86cd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -8.660132
+      objectReference: {fileID: 0}
+    - target: {fileID: 4379341370567402, guid: e3b40ebede903ec49b49ad94465f86cd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -4.739249
+      objectReference: {fileID: 0}
+    - target: {fileID: 4379341370567402, guid: e3b40ebede903ec49b49ad94465f86cd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -5.098093
+      objectReference: {fileID: 0}
+    - target: {fileID: 4379341370567402, guid: e3b40ebede903ec49b49ad94465f86cd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4379341370567402, guid: e3b40ebede903ec49b49ad94465f86cd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4379341370567402, guid: e3b40ebede903ec49b49ad94465f86cd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4379341370567402, guid: e3b40ebede903ec49b49ad94465f86cd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4379341370567402, guid: e3b40ebede903ec49b49ad94465f86cd, type: 2}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: e3b40ebede903ec49b49ad94465f86cd, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1284864539
 GameObject:
   m_ObjectHideFlags: 0
@@ -44720,8 +44759,8 @@ MonoBehaviour:
   pickARandomName: 1
   enemyNamesList: {fileID: 4900000, guid: 48faffacd763b514599640f2b52243d2, type: 3}
   enemyName: 
-  attackRangeDistance: 1.4
-  closeRangeDistance: 2.4
+  attackRangeDistance: 0.9
+  closeRangeDistance: 4
   midRangeDistance: 3.5
   farRangeDistance: 4.5
   RangeMarging: 1
@@ -48312,8 +48351,8 @@ MonoBehaviour:
   pickARandomName: 1
   enemyNamesList: {fileID: 4900000, guid: 48faffacd763b514599640f2b52243d2, type: 3}
   enemyName: 
-  attackRangeDistance: 1.4
-  closeRangeDistance: 2.4
+  attackRangeDistance: 0.9
+  closeRangeDistance: 4
   midRangeDistance: 3.5
   farRangeDistance: 4.5
   RangeMarging: 1
@@ -48831,8 +48870,8 @@ MonoBehaviour:
   pickARandomName: 1
   enemyNamesList: {fileID: 4900000, guid: 48faffacd763b514599640f2b52243d2, type: 3}
   enemyName: 
-  attackRangeDistance: 1.4
-  closeRangeDistance: 2.4
+  attackRangeDistance: 0.9
+  closeRangeDistance: 4
   midRangeDistance: 3.5
   farRangeDistance: 4.5
   RangeMarging: 1
@@ -49419,8 +49458,8 @@ MonoBehaviour:
   pickARandomName: 1
   enemyNamesList: {fileID: 4900000, guid: 48faffacd763b514599640f2b52243d2, type: 3}
   enemyName: Nico
-  attackRangeDistance: 1.4
-  closeRangeDistance: 2.4
+  attackRangeDistance: 0.9
+  closeRangeDistance: 4
   midRangeDistance: 3.5
   farRangeDistance: 4.5
   RangeMarging: 1
@@ -49756,8 +49795,8 @@ MonoBehaviour:
   pickARandomName: 1
   enemyNamesList: {fileID: 4900000, guid: 48faffacd763b514599640f2b52243d2, type: 3}
   enemyName: 
-  attackRangeDistance: 1.4
-  closeRangeDistance: 2.4
+  attackRangeDistance: 0.9
+  closeRangeDistance: 4
   midRangeDistance: 3.5
   farRangeDistance: 4.5
   RangeMarging: 1
@@ -50241,8 +50280,8 @@ MonoBehaviour:
   pickARandomName: 1
   enemyNamesList: {fileID: 4900000, guid: 48faffacd763b514599640f2b52243d2, type: 3}
   enemyName: 
-  attackRangeDistance: 1.4
-  closeRangeDistance: 2.4
+  attackRangeDistance: 0.9
+  closeRangeDistance: 4
   midRangeDistance: 3.5
   farRangeDistance: 4.5
   RangeMarging: 1
@@ -50668,8 +50707,8 @@ MonoBehaviour:
   pickARandomName: 1
   enemyNamesList: {fileID: 4900000, guid: 48faffacd763b514599640f2b52243d2, type: 3}
   enemyName: Nico
-  attackRangeDistance: 1.4
-  closeRangeDistance: 2.4
+  attackRangeDistance: 0.9
+  closeRangeDistance: 4
   midRangeDistance: 3.5
   farRangeDistance: 4.5
   RangeMarging: 1
@@ -50927,7 +50966,7 @@ Prefab:
     - target: {fileID: 114225054467775110, guid: d78222c3bb408be4d96a254010874f9e,
         type: 2}
       propertyPath: attackRangeDistance
-      value: 1.4
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 1939893826906624, guid: d78222c3bb408be4d96a254010874f9e, type: 2}
       propertyPath: m_IsActive
@@ -50937,6 +50976,11 @@ Prefab:
         type: 2}
       propertyPath: sightDistance
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 114225054467775110, guid: d78222c3bb408be4d96a254010874f9e,
+        type: 2}
+      propertyPath: closeRangeDistance
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d78222c3bb408be4d96a254010874f9e, type: 2}
@@ -55469,7 +55513,7 @@ MonoBehaviour:
     type: 2}
   orientToImpactDir: 1
   spawnItem: {fileID: 1448244365320500, guid: 4bdf5d1286d0b71438ccfa7edfda52eb, type: 2}
-  spawnChance: 0
+  spawnChance: 100
   destroyOnHit: 1
 --- !u!136 &1821769443
 CapsuleCollider:
@@ -55928,7 +55972,7 @@ MonoBehaviour:
     type: 2}
   orientToImpactDir: 1
   spawnItem: {fileID: 1448244365320500, guid: 4bdf5d1286d0b71438ccfa7edfda52eb, type: 2}
-  spawnChance: 0
+  spawnChance: 10
   destroyOnHit: 1
 --- !u!136 &1843100815
 CapsuleCollider:
@@ -61542,7 +61586,7 @@ Prefab:
     - target: {fileID: 114225054467775110, guid: d78222c3bb408be4d96a254010874f9e,
         type: 2}
       propertyPath: attackRangeDistance
-      value: 1.4
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 114225054467775110, guid: d78222c3bb408be4d96a254010874f9e,
         type: 2}
@@ -61552,6 +61596,11 @@ Prefab:
     - target: {fileID: 1939893826906624, guid: d78222c3bb408be4d96a254010874f9e, type: 2}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114225054467775110, guid: d78222c3bb408be4d96a254010874f9e,
+        type: 2}
+      propertyPath: closeRangeDistance
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d78222c3bb408be4d96a254010874f9e, type: 2}

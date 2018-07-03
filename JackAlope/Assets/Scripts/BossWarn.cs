@@ -8,11 +8,19 @@ public class BossWarn : MonoBehaviour {
     // Use this for initialization
 
     public GameObject BossWarning;
-	void Start () {
-	}
+    public AudioClip Boss_Song;
+    public GameObject AudioSource;
+    void OnEnable () {
+
+        this.AudioSource = GameObject.FindGameObjectWithTag("Music");
+
+    }
 
     public void showWarn()
     {
+        this.AudioSource.GetComponent<AudioSource>().clip = Boss_Song;
+        this.AudioSource.GetComponent<AudioSource>().Play();
+        GlobalAudioPlayer.PlaySFX("Alert");
         BossWarning.SetActive(true);
         StartCoroutine(flickr());
     }

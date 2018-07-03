@@ -141,12 +141,16 @@ public class PlayerCombat : MonoBehaviour, IDamagable<DamageObject> {
 	}
 
 	void Update() {
-		
-		//grounded
-		if(animator) isGrounded = animator.animator.GetBool("isGrounded");
 
-		//check for defence every frame
-		if(!isDead && isGrounded && DefendStates.Contains(playerState.currentState)) Defend(inputManager.isDefendKeyDown());
+        //grounded
+        try
+        {
+            if (animator) isGrounded = animator.animator.GetBool("isGrounded");
+
+            //check for defence every frame
+            if (!isDead && isGrounded && DefendStates.Contains(playerState.currentState)) Defend(inputManager.isDefendKeyDown());
+        }
+        catch { }
 
 	}
 
@@ -418,7 +422,8 @@ public class PlayerCombat : MonoBehaviour, IDamagable<DamageObject> {
 			if (damagableObject != null) {
 				damagableObject.Hit(lastAttack);
 
-				//we have hit something
+                //we have hit something
+              
 				targetHit = true;
 			}
 			i++;
@@ -566,6 +571,7 @@ public class PlayerCombat : MonoBehaviour, IDamagable<DamageObject> {
 			Invoke ("pickupItem", .2f);
 		}
 	}
+    
 
 	//pick up item
 	void pickupItem(){
@@ -719,7 +725,9 @@ public class PlayerCombat : MonoBehaviour, IDamagable<DamageObject> {
 		
 	//returns true is the player is facing a gameobject
 	public bool isFacingTarget(GameObject g) {
-		return ((g.transform.position.x > transform.position.x && currentDirection == DIRECTION.Left) || (g.transform.position.x < transform.position.x && currentDirection == DIRECTION.Right));
+       
+            return ((g.transform.position.x > transform.position.x && currentDirection == DIRECTION.Left) || (g.transform.position.x < transform.position.x && currentDirection == DIRECTION.Right));
+        
 	}
 
 	//returns true if the player is grounded

@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Analytics;
 
 [RequireComponent(typeof(Rigidbody))]
 public class HealthPickup : MonoBehaviour {
@@ -33,8 +34,9 @@ public class HealthPickup : MonoBehaviour {
 
 			//restore hp to unit
 			hs.AddHealth(RestoreHP);
+            Analytics.CustomEvent("HealthKit_PickedUp");
 
-		} else {
+        } else {
 			Debug.Log("no health system found on GameObject '" + player.gameObject.name + "'.");
 		}
 

@@ -53,7 +53,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UseKeyboardInput: 1
   UseJoypadInput: 0
-  UseTouchScreenInput: 0
+  UseTouchScreenInput: 1
   Left: 276
   Right: 275
   Up: 273

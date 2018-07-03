@@ -27,6 +27,8 @@ public class PauseGame : MonoBehaviour {
     public void HomeButton()
     {
         Destroy(GameObject.FindGameObjectWithTag("UI"));
+        Destroy(GameObject.FindGameObjectWithTag("AdWeapon"));
+        Destroy(GameObject.FindGameObjectWithTag("ExtraCheker"));
         SceneManager.LoadScene("MainMenu");
      
     }

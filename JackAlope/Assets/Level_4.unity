@@ -15708,8 +15708,8 @@ MonoBehaviour:
   pickARandomName: 1
   enemyNamesList: {fileID: 4900000, guid: 48faffacd763b514599640f2b52243d2, type: 3}
   enemyName: 
-  attackRangeDistance: 1.4
-  closeRangeDistance: 2.4
+  attackRangeDistance: 0.9
+  closeRangeDistance: 4
   midRangeDistance: 3.5
   farRangeDistance: 4.5
   RangeMarging: 1
@@ -18207,8 +18207,8 @@ MonoBehaviour:
   pickARandomName: 1
   enemyNamesList: {fileID: 4900000, guid: 48faffacd763b514599640f2b52243d2, type: 3}
   enemyName: 
-  attackRangeDistance: 1.4
-  closeRangeDistance: 2.4
+  attackRangeDistance: 0.9
+  closeRangeDistance: 4
   midRangeDistance: 3.5
   farRangeDistance: 4.5
   RangeMarging: 1
@@ -18608,10 +18608,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LevelMusic: Music
   showMenuAtStart: HUD
-  playMusic: 1
+  playMusic: 0
   createUI: 1
   createInputManager: 1
-  createAudioPlayer: 1
+  createAudioPlayer: 0
   createGameCamera: 1
 --- !u!4 &368878805
 Transform:
@@ -18716,8 +18716,8 @@ MonoBehaviour:
   pickARandomName: 1
   enemyNamesList: {fileID: 4900000, guid: 48faffacd763b514599640f2b52243d2, type: 3}
   enemyName: Nico
-  attackRangeDistance: 1.4
-  closeRangeDistance: 2.4
+  attackRangeDistance: 0.9
+  closeRangeDistance: 4
   midRangeDistance: 3.5
   farRangeDistance: 4.5
   RangeMarging: 1
@@ -19310,8 +19310,8 @@ MonoBehaviour:
   pickARandomName: 1
   enemyNamesList: {fileID: 4900000, guid: 48faffacd763b514599640f2b52243d2, type: 3}
   enemyName: 
-  attackRangeDistance: 1.4
-  closeRangeDistance: 2.4
+  attackRangeDistance: 0.9
+  closeRangeDistance: 4
   midRangeDistance: 3.5
   farRangeDistance: 4.5
   RangeMarging: 1
@@ -19562,8 +19562,8 @@ MonoBehaviour:
   pickARandomName: 1
   enemyNamesList: {fileID: 4900000, guid: 48faffacd763b514599640f2b52243d2, type: 3}
   enemyName: 
-  attackRangeDistance: 1.4
-  closeRangeDistance: 2.4
+  attackRangeDistance: 0.9
+  closeRangeDistance: 4
   midRangeDistance: 3.5
   farRangeDistance: 4.5
   RangeMarging: 1
@@ -19961,6 +19961,76 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 406490, guid: b83683c40c7a1d143b84171f2c2fc5c5, type: 2}
   m_PrefabInternal: {fileID: 201241463}
+--- !u!1001 &434595610
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2007239347}
+    m_Modifications:
+    - target: {fileID: 430358, guid: 2f8fda89ab1ec834882c458137e71234, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 1.022
+      objectReference: {fileID: 0}
+    - target: {fileID: 430358, guid: 2f8fda89ab1ec834882c458137e71234, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 430358, guid: 2f8fda89ab1ec834882c458137e71234, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 430358, guid: 2f8fda89ab1ec834882c458137e71234, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 430358, guid: 2f8fda89ab1ec834882c458137e71234, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 430358, guid: 2f8fda89ab1ec834882c458137e71234, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 430358, guid: 2f8fda89ab1ec834882c458137e71234, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 430358, guid: 2f8fda89ab1ec834882c458137e71234, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 430358, guid: 2f8fda89ab1ec834882c458137e71234, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 0.55839574
+      objectReference: {fileID: 0}
+    - target: {fileID: 430358, guid: 2f8fda89ab1ec834882c458137e71234, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.8087259
+      objectReference: {fileID: 0}
+    - target: {fileID: 430358, guid: 2f8fda89ab1ec834882c458137e71234, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.916038
+      objectReference: {fileID: 0}
+    - target: {fileID: 2396766, guid: 2f8fda89ab1ec834882c458137e71234, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6f76167a2e31f9d43a265db12a06fb0f, type: 2}
+    - target: {fileID: 430358, guid: 2f8fda89ab1ec834882c458137e71234, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 430358, guid: 2f8fda89ab1ec834882c458137e71234, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 430358, guid: 2f8fda89ab1ec834882c458137e71234, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 2f8fda89ab1ec834882c458137e71234, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &438412426
 GameObject:
   m_ObjectHideFlags: 0
@@ -20311,6 +20381,48 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 486750, guid: d6ca49573884e2c4497026d501b78e1f, type: 2}
   m_PrefabInternal: {fileID: 457745308}
+--- !u!1001 &458213858
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4379341370567402, guid: e3b40ebede903ec49b49ad94465f86cd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -8.660132
+      objectReference: {fileID: 0}
+    - target: {fileID: 4379341370567402, guid: e3b40ebede903ec49b49ad94465f86cd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -4.739249
+      objectReference: {fileID: 0}
+    - target: {fileID: 4379341370567402, guid: e3b40ebede903ec49b49ad94465f86cd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -5.098093
+      objectReference: {fileID: 0}
+    - target: {fileID: 4379341370567402, guid: e3b40ebede903ec49b49ad94465f86cd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4379341370567402, guid: e3b40ebede903ec49b49ad94465f86cd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4379341370567402, guid: e3b40ebede903ec49b49ad94465f86cd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4379341370567402, guid: e3b40ebede903ec49b49ad94465f86cd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4379341370567402, guid: e3b40ebede903ec49b49ad94465f86cd, type: 2}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: e3b40ebede903ec49b49ad94465f86cd, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &462403393
 Prefab:
   m_ObjectHideFlags: 0
@@ -23579,8 +23691,8 @@ MonoBehaviour:
   pickARandomName: 1
   enemyNamesList: {fileID: 4900000, guid: 48faffacd763b514599640f2b52243d2, type: 3}
   enemyName: 
-  attackRangeDistance: 1.4
-  closeRangeDistance: 2.4
+  attackRangeDistance: 0.9
+  closeRangeDistance: 4
   midRangeDistance: 3.5
   farRangeDistance: 4.5
   RangeMarging: 1
@@ -28508,8 +28620,8 @@ MonoBehaviour:
   pickARandomName: 1
   enemyNamesList: {fileID: 4900000, guid: 48faffacd763b514599640f2b52243d2, type: 3}
   enemyName: 
-  attackRangeDistance: 1.4
-  closeRangeDistance: 2.4
+  attackRangeDistance: 0.9
+  closeRangeDistance: 4
   midRangeDistance: 3.5
   farRangeDistance: 4.5
   RangeMarging: 1
@@ -29528,12 +29640,17 @@ Prefab:
     - target: {fileID: 114225054467775110, guid: d78222c3bb408be4d96a254010874f9e,
         type: 2}
       propertyPath: attackRangeDistance
-      value: 1.4
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 114225054467775110, guid: d78222c3bb408be4d96a254010874f9e,
         type: 2}
       propertyPath: sightDistance
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114225054467775110, guid: d78222c3bb408be4d96a254010874f9e,
+        type: 2}
+      propertyPath: closeRangeDistance
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d78222c3bb408be4d96a254010874f9e, type: 2}
@@ -30346,8 +30463,8 @@ MonoBehaviour:
   pickARandomName: 1
   enemyNamesList: {fileID: 4900000, guid: 48faffacd763b514599640f2b52243d2, type: 3}
   enemyName: 
-  attackRangeDistance: 1.4
-  closeRangeDistance: 2.4
+  attackRangeDistance: 0.9
+  closeRangeDistance: 4
   midRangeDistance: 3.5
   farRangeDistance: 4.5
   RangeMarging: 1
@@ -36119,38 +36236,25 @@ MonoBehaviour:
   rb: {fileID: 974890929}
   capsule: {fileID: 974890930}
   AttackList:
-  - animTrigger: Attack1
+  - animTrigger: BossAttack4
     damage: 3
     duration: 1
     comboResetTime: 0.5
     hitSFX: DefaultHit
     knockDown: 0
-    slowMotionEffect: 1
+    slowMotionEffect: 0
     DefenceOverride: 0
     isGroundAttack: 0
-    CollSize: 1
+    CollSize: 0
     collDistance: 0.8
     collHeight: 1.4
     inflictor: {fileID: 0}
-  - animTrigger: Attack2
+  - animTrigger: BossAttack4_1
     damage: 4
     duration: 1
     comboResetTime: 0.5
     hitSFX: DefaultHit
-    knockDown: 0
-    slowMotionEffect: 1
-    DefenceOverride: 0
-    isGroundAttack: 0
-    CollSize: 1
-    collDistance: 0.8
-    collHeight: 1.4
-    inflictor: {fileID: 0}
-  - animTrigger: Attack3
-    damage: 4
-    duration: 1
-    comboResetTime: 0.5
-    hitSFX: DefaultHit
-    knockDown: 0
+    knockDown: 1
     slowMotionEffect: 1
     DefenceOverride: 0
     isGroundAttack: 0
@@ -36171,19 +36275,19 @@ MonoBehaviour:
   pickARandomName: 0
   enemyNamesList: {fileID: 4900000, guid: 48faffacd763b514599640f2b52243d2, type: 3}
   enemyName: 'Boss: Wolf'
-  attackRangeDistance: 1.2
-  closeRangeDistance: 2.4
+  attackRangeDistance: 0.9
+  closeRangeDistance: 4
   midRangeDistance: 3.5
   farRangeDistance: 4.5
   RangeMarging: 1
   walkSpeed: 1.2
   walkBackwardSpeed: 1.2
   sightDistance: 100
-  attackInterval: 0
+  attackInterval: 1.02
   rotationSpeed: 10
   lookaheadDistance: 0.4
   ignoreCliffs: 0
-  KnockdownTimeout: 1.5
+  KnockdownTimeout: 1
   KnockdownUpForce: 4
   KnockbackForce: 3
   CollisionLayer:
@@ -36259,7 +36363,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 974890926}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -63.65, y: 0, z: -0.25}
+  m_LocalPosition: {x: -63.23, y: 0, z: -0.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 74459144}
@@ -36829,7 +36933,7 @@ Prefab:
     - target: {fileID: 114225054467775110, guid: d78222c3bb408be4d96a254010874f9e,
         type: 2}
       propertyPath: attackRangeDistance
-      value: 1.4
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 1939893826906624, guid: d78222c3bb408be4d96a254010874f9e, type: 2}
       propertyPath: m_IsActive
@@ -36839,6 +36943,11 @@ Prefab:
         type: 2}
       propertyPath: sightDistance
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 114225054467775110, guid: d78222c3bb408be4d96a254010874f9e,
+        type: 2}
+      propertyPath: closeRangeDistance
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d78222c3bb408be4d96a254010874f9e, type: 2}
@@ -37695,8 +37804,8 @@ MonoBehaviour:
   pickARandomName: 1
   enemyNamesList: {fileID: 4900000, guid: 48faffacd763b514599640f2b52243d2, type: 3}
   enemyName: 
-  attackRangeDistance: 1.4
-  closeRangeDistance: 2.4
+  attackRangeDistance: 0.9
+  closeRangeDistance: 4
   midRangeDistance: 3.5
   farRangeDistance: 4.5
   RangeMarging: 1
@@ -39437,8 +39546,8 @@ MonoBehaviour:
   pickARandomName: 1
   enemyNamesList: {fileID: 4900000, guid: 48faffacd763b514599640f2b52243d2, type: 3}
   enemyName: 
-  attackRangeDistance: 1.4
-  closeRangeDistance: 2.4
+  attackRangeDistance: 0.9
+  closeRangeDistance: 4
   midRangeDistance: 3.5
   farRangeDistance: 4.5
   RangeMarging: 1
@@ -50948,7 +51057,7 @@ MonoBehaviour:
     type: 2}
   orientToImpactDir: 1
   spawnItem: {fileID: 1448244365320500, guid: 4bdf5d1286d0b71438ccfa7edfda52eb, type: 2}
-  spawnChance: 0
+  spawnChance: 80
   destroyOnHit: 1
 --- !u!136 &1391432472
 CapsuleCollider:
@@ -51768,8 +51877,8 @@ MonoBehaviour:
   pickARandomName: 1
   enemyNamesList: {fileID: 4900000, guid: 48faffacd763b514599640f2b52243d2, type: 3}
   enemyName: 
-  attackRangeDistance: 1.4
-  closeRangeDistance: 2.4
+  attackRangeDistance: 0.9
+  closeRangeDistance: 4
   midRangeDistance: 3.5
   farRangeDistance: 4.5
   RangeMarging: 1
@@ -52834,7 +52943,7 @@ MonoBehaviour:
     type: 2}
   orientToImpactDir: 1
   spawnItem: {fileID: 1448244365320500, guid: 4bdf5d1286d0b71438ccfa7edfda52eb, type: 2}
-  spawnChance: 0
+  spawnChance: 10
   destroyOnHit: 1
 --- !u!136 &1517158609
 CapsuleCollider:
@@ -54659,8 +54768,8 @@ MonoBehaviour:
   pickARandomName: 1
   enemyNamesList: {fileID: 4900000, guid: 48faffacd763b514599640f2b52243d2, type: 3}
   enemyName: 
-  attackRangeDistance: 1.4
-  closeRangeDistance: 2.4
+  attackRangeDistance: 0.9
+  closeRangeDistance: 4
   midRangeDistance: 3.5
   farRangeDistance: 4.5
   RangeMarging: 1
@@ -55262,7 +55371,7 @@ MonoBehaviour:
     type: 2}
   orientToImpactDir: 1
   spawnItem: {fileID: 1448244365320500, guid: 4bdf5d1286d0b71438ccfa7edfda52eb, type: 2}
-  spawnChance: 0
+  spawnChance: 10
   destroyOnHit: 1
 --- !u!136 &1673946994
 CapsuleCollider:
@@ -55705,8 +55814,8 @@ MonoBehaviour:
   pickARandomName: 1
   enemyNamesList: {fileID: 4900000, guid: 48faffacd763b514599640f2b52243d2, type: 3}
   enemyName: 
-  attackRangeDistance: 1.4
-  closeRangeDistance: 2.4
+  attackRangeDistance: 0.9
+  closeRangeDistance: 4
   midRangeDistance: 3.5
   farRangeDistance: 4.5
   RangeMarging: 1
@@ -62892,7 +63001,7 @@ Prefab:
     - target: {fileID: 114225054467775110, guid: d78222c3bb408be4d96a254010874f9e,
         type: 2}
       propertyPath: attackRangeDistance
-      value: 1.4
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 114225054467775110, guid: d78222c3bb408be4d96a254010874f9e,
         type: 2}
@@ -62902,6 +63011,11 @@ Prefab:
     - target: {fileID: 1939893826906624, guid: d78222c3bb408be4d96a254010874f9e, type: 2}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114225054467775110, guid: d78222c3bb408be4d96a254010874f9e,
+        type: 2}
+      propertyPath: closeRangeDistance
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d78222c3bb408be4d96a254010874f9e, type: 2}
@@ -64094,6 +64208,10 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 453012, guid: 60f50d20a1446954987f8ee93c6b4cb2, type: 2}
   m_PrefabInternal: {fileID: 108539830}
+--- !u!4 &2007239347 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 470180, guid: 80cf54b3b2c8e7e43a80c62f98a0fefe, type: 2}
+  m_PrefabInternal: {fileID: 1654559204}
 --- !u!4 &2010217792 stripped
 Transform:
   m_PrefabParentObject: {fileID: 409272, guid: 7f72d1817c017fa4196dea2b91531d3f, type: 2}
@@ -64315,8 +64433,8 @@ MonoBehaviour:
   pickARandomName: 1
   enemyNamesList: {fileID: 4900000, guid: 48faffacd763b514599640f2b52243d2, type: 3}
   enemyName: 
-  attackRangeDistance: 1.4
-  closeRangeDistance: 2.4
+  attackRangeDistance: 0.9
+  closeRangeDistance: 4
   midRangeDistance: 3.5
   farRangeDistance: 4.5
   RangeMarging: 1
@@ -64501,8 +64619,8 @@ MonoBehaviour:
   pickARandomName: 1
   enemyNamesList: {fileID: 4900000, guid: 48faffacd763b514599640f2b52243d2, type: 3}
   enemyName: 
-  attackRangeDistance: 1.4
-  closeRangeDistance: 2.4
+  attackRangeDistance: 0.9
+  closeRangeDistance: 4
   midRangeDistance: 3.5
   farRangeDistance: 4.5
   RangeMarging: 1
@@ -66173,12 +66291,17 @@ Prefab:
     - target: {fileID: 114225054467775110, guid: d78222c3bb408be4d96a254010874f9e,
         type: 2}
       propertyPath: attackRangeDistance
-      value: 1.4
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 114225054467775110, guid: d78222c3bb408be4d96a254010874f9e,
         type: 2}
       propertyPath: sightDistance
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 114225054467775110, guid: d78222c3bb408be4d96a254010874f9e,
+        type: 2}
+      propertyPath: closeRangeDistance
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d78222c3bb408be4d96a254010874f9e, type: 2}

@@ -44,6 +44,12 @@ public class HealthSystem : MonoBehaviour {
 			if (isDead()) gameObject.SendMessage("Death", SendMessageOptions.DontRequireReceiver);
 		}
 
+        if(this.gameObject.tag == "Enemy" && !invulnerable)
+        {
+            GameObject.FindGameObjectWithTag("ScoreSystem").GetComponent<ScoreSystem>().currentScore += 10.0f;
+            GameObject.FindGameObjectWithTag("EnergyBar").GetComponent<GainEnergy>().GainEnergyPunch(0.015f);
+           
+        }
 		//update Health Event
 		SendUpdateEvent();
 	}
@@ -55,7 +61,7 @@ public class HealthSystem : MonoBehaviour {
 	}
 		
 	//health update event
-	void SendUpdateEvent(){
+	public void SendUpdateEvent(){
 		float CurrentHealthPercentage = 1f/MaxHp * CurrentHp;
 		if(onHealthChange != null) onHealthChange(CurrentHealthPercentage, gameObject);
 	}

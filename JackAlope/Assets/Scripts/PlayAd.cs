@@ -73,106 +73,56 @@ public class PlayAd : MonoBehaviour
             
         }
 
-
-        //HEYZAP
-
-        if (rand == 5)
-        {
-            HZIncentivizedAd.AdDisplayListener listener = delegate (string adState, string adTag)
-            {
-                if (adState.Equals("available"))
-                {
-                    Debug.Log("Available");
-                    HZIncentivizedAd.Show();
-                    // Sent when an ad has been loaded and is ready to be displayed,
-                    //   either because we autofetched an ad or because you called
-                    //   `Fetch`.
-                }
-                if (adState.Equals("fetch_failed"))
-                {
-                    Debug.Log("Failed Fetch Incentive");
-                    // Sent when an ad has failed to load.
-                    // This is sent with when we try to autofetch an ad and fail, and also
-                    //    as a response to calls you make to `Fetch` that fail.
-                    // Some of the possible reasons for fetch failures:
-                    //    - Incentivized ad rate limiting (see your app's Publisher
-                    //      Settings dashboard)
-                    //    - None of the available ad networks had any fill
-                    //    - Network connectivity
-                    //    - The given ad tag is disabled (see your app's Publisher
-                    //      Settings dashboard)
-                    //    - One or more of the segments the user falls into are
-                    //      preventing an ad from being fetched (see your
-                    //      Segmentation Settings dashboard)
-                    HZIncentivizedAd.Fetch();
-                }
-                if (adState.Equals("incentivized_result_complete"))
-                {
-                    HZIncentivizedAd.Fetch();
-                    Debug.Log("Player gain 5 GEMS");
-                    go = GameObject.FindGameObjectWithTag("GameOver");
-                    go.GetComponent<GameOverScrn>().RestartLevel();
-                    // The user has watched the entire video and should be given a reward.
-                }
-                if (adState.Equals("incentivized_result_incomplete"))
-                {
-                    HZIncentivizedAd.Fetch();
-                    // The user did not watch the entire video and should not be given a   reward.
-                }
-                if (adState.Equals("audio_starting"))
-                {
-                    // The ad about to be shown will need audio.
-                    // Mute any background music.
-                }
-                if (adState.Equals("audio_finished"))
-                {
-                    // The ad being shown no longer needs audio.
-                    // Any background music can be resumed.
-                }
-                if (adState.Equals("show"))
-                {
-
-                    // Sent when an ad has been displayed.
-                    // This is a good place to pause your app, if applicable.
-                }
-                if (adState.Equals("hide"))
-                {
-                    HZIncentivizedAd.Fetch();
-                    Debug.Log("Player gain 5 GEMS");
-                    go = GameObject.FindGameObjectWithTag("GameOver");
-                    go.GetComponent<GameOverScrn>().RestartLevel();
-                    // Sent when an ad has been removed from view.
-                    // This is a good place to unpause your app, if applicable.
-                }
-                if (adState.Equals("click"))
-                {
-                    // Sent when an ad has been clicked by the user.
-                }
-            };
-            HZIncentivizedAd.SetDisplayListener(listener);
-            if (HZIncentivizedAd.IsAvailable())
-            {
-                HZIncentivizedAd.Show();
-                // StartCoroutine(restarWait());
-                HZIncentivizedAd.Fetch();
-            }
-            else
-            {
-                // WatchADs();
-                rand = 3;
-            }
-        }
         if (rand == 2)
         {
+            Screen.orientation = ScreenOrientation.LandscapeLeft;
             // [AdColony]
             ConfigureAds();
             RegisterForAdsCallbacks();
             RequestAdReward();
             PlayAdv();
         }
+        if (rand == 3)
+        {
+            //APLOVIN
 
+            AppLovin.SetRewardedVideoUsername("JackAlope_AppLovin");
+
+
+            if (AppLovin.IsIncentInterstitialReady())
+            {
+                AppLovin.ShowRewardedInterstitialForZoneId("4bcd90e276831a9d");
+                //AppLovin.ShowRewardedInterstitial();
+                onAppLovinEventReceived("HIDDENREWARDED");
+            }
+            else
+            {
+                // No rewarded ad is available.  Perform failover logic...
+                if (AppLovin.HasPreloadedInterstitial())
+                {
+                    // An ad is currently available, so show the interstitial.
+                    AppLovin.ShowInterstitial();
+                    onAppLovinEventReceived("HIDDENINTER");
+                }
+                else
+                {
+
+                    // No ad is available.  Perform failover logic...
+                    AppLovin.LoadRewardedInterstitial();
+                    ContinuePlaying();
+                    /*Debug.Log("Player gain 5 GEMS");
+                    go = GameObject.FindGameObjectWithTag("GameOver");
+                    go.GetComponent<GameOverScrn>().RestartLevel();*/
+
+                    //  gameoverfunctions.GetComponent<GameOverScrn>().RestartLevel();
+                }
+            }
+        }
 #endif
     }
+
+
+
     IEnumerator waitMe()
     {
         yield return new WaitForSeconds(1f);
@@ -297,7 +247,7 @@ public class PlayAd : MonoBehaviour
 
          AdColony.Ads.OnExpiring += (AdColony.InterstitialAd ad) =>
          {
-             AdColony.Ads.RequestInterstitialAd(ad.ZoneId, null);
+             AdColony.Ads.RequestInterstitialAd(ad.ZoneId,null );
          };
 
         AdColony.Ads.OnRewardGranted += (string zoneId, bool success, string name, int amount) =>
@@ -341,6 +291,7 @@ public class PlayAd : MonoBehaviour
          AdColony.AdOptions adOptions = new AdColony.AdOptions();
          adOptions.ShowPrePopup = true;
          adOptions.ShowPostPopup = true;
+         
 
          AdColony.Ads.RequestInterstitialAd(zoneIDs[1], adOptions);
      }

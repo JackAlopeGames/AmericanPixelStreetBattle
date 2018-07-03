@@ -11,7 +11,7 @@ public class CountDownGO : MonoBehaviour {
     void Start () {
 	}
 	public IEnumerator CountDown()
-    {
+    {   
         this.Counter.gameObject.SetActive(true);
         this.Counter.text = "15";
         yield return null;
@@ -27,6 +27,8 @@ public class CountDownGO : MonoBehaviour {
         this.Counter.text = "";
         this.Counter.gameObject.SetActive(false);
         Destroy(GameObject.FindGameObjectWithTag("UI"));
+        Destroy(GameObject.FindGameObjectWithTag("AdWeapon"));
+        Destroy(GameObject.FindGameObjectWithTag("ExtraCheker"));
         SceneManager.LoadScene("MainMenu");
     }
 

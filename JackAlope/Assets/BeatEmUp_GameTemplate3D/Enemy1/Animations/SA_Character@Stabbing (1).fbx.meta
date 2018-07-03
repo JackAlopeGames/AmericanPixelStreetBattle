@@ -1,0 +1,960 @@
+fileFormatVersion: 2
+guid: 17f91211bd9e7844a8d69efd450d1905
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Arm_Left_jnt
+    100002: Arm_Right_jnt
+    100004: Chest_jnt
+    100006: Foot_Left_jnt
+    100008: Foot_Right_jnt
+    100010: Forearm_Left_jnt
+    100012: Forearm_Right_jnt
+    100014: Hand_Left_jnt
+    100016: Hand_Right_jnt
+    100018: Head_jnt
+    100020: Hips_jnt
+    100022: LowerLeg_Left_jnt
+    100024: LowerLeg_Right_jnt
+    100026: mixamo:SA_Char_Survivor_Biohazard
+    100028: mixamo:SA_Char_Survivor_Businessman
+    100030: mixamo:SA_Char_Survivor_Doctor
+    100032: mixamo:SA_Char_Survivor_Farmer
+    100034: mixamo:SA_Char_Survivor_FemaleHero
+    100036: mixamo:SA_Char_Survivor_FemalePyro
+    100038: mixamo:SA_Char_Survivor_FemaleSoldier
+    100040: mixamo:SA_Char_Survivor_FemaleTrenchcoat
+    100042: mixamo:SA_Char_Survivor_Hazard
+    100044: mixamo:SA_Char_Survivor_HoodedMan
+    100046: mixamo:SA_Char_Survivor_InjuredMan
+    100048: mixamo:SA_Char_Survivor_Male_01
+    100050: mixamo:SA_Char_Survivor_Male_02
+    100052: mixamo:SA_Char_Survivor_Male_03
+    100054: mixamo:SA_Char_Survivor_Male_04
+    100056: mixamo:SA_Char_Survivor_MaleHunter
+    100058: mixamo:SA_Char_Survivor_MaleTrenchcoat
+    100060: mixamo:SA_Char_Survivor_OldMan
+    100062: mixamo:SA_Char_Survivor_Prisoner
+    100064: mixamo:SA_Char_Survivor_RoadWorker
+    100066: mixamo:SA_Char_Survivor_Scout
+    100068: mixamo:SA_Char_Survivor_Sheriff
+    100070: mixamo:SA_Zombie_AirportSecurity
+    100072: mixamo:SA_Zombie_AirportWorker
+    100074: mixamo:SA_Zombie_Bellhop
+    100076: mixamo:SA_Zombie_Businessman
+    100078: mixamo:SA_Zombie_Cheerleader
+    100080: mixamo:SA_Zombie_Clown
+    100082: mixamo:SA_Zombie_Farmer
+    100084: mixamo:SA_Zombie_FarmersDaughter
+    100086: mixamo:SA_Zombie_Firefighter
+    100088: mixamo:SA_Zombie_FootballPlayer
+    100090: mixamo:SA_Zombie_Grandma
+    100092: mixamo:SA_Zombie_Hobo
+    100094: mixamo:SA_Zombie_Industrial
+    100096: mixamo:SA_Zombie_Mechanic
+    100098: mixamo:SA_Zombie_Mountie
+    100100: mixamo:SA_Zombie_Pilot
+    100102: mixamo:SA_Zombie_Pimp
+    100104: mixamo:SA_Zombie_Prisoner
+    100106: mixamo:SA_Zombie_Prostitute
+    100108: mixamo:SA_Zombie_Roadworker
+    100110: mixamo:SA_Zombie_Robber
+    100112: mixamo:SA_Zombie_Runner
+    100114: mixamo:SA_Zombie_Santa
+    100116: mixamo:SA_Zombie_Shopkeeper
+    100118: mixamo:SA_Zombie_Soldier
+    100120: mixamo:SA_Zombie_Streetman
+    100122: mixamo:SA_Zombie_Tourist
+    100124: mixamo:SA_Zombie_Trucker
+    100126: Neck_jnt
+    100128: //RootNode
+    100130: Shoulder_Left_jnt
+    100132: Shoulder_Right_jnt
+    100134: Spine_jnt
+    100136: Spine_jnt1
+    100138: Toe_Left_jnt
+    100140: Toe_Right_jnt
+    100142: UpperLeg_Left_jnt
+    100144: UpperLeg_Right_jnt
+    400000: Arm_Left_jnt
+    400002: Arm_Right_jnt
+    400004: Chest_jnt
+    400006: Foot_Left_jnt
+    400008: Foot_Right_jnt
+    400010: Forearm_Left_jnt
+    400012: Forearm_Right_jnt
+    400014: Hand_Left_jnt
+    400016: Hand_Right_jnt
+    400018: Head_jnt
+    400020: Hips_jnt
+    400022: LowerLeg_Left_jnt
+    400024: LowerLeg_Right_jnt
+    400026: mixamo:SA_Char_Survivor_Biohazard
+    400028: mixamo:SA_Char_Survivor_Businessman
+    400030: mixamo:SA_Char_Survivor_Doctor
+    400032: mixamo:SA_Char_Survivor_Farmer
+    400034: mixamo:SA_Char_Survivor_FemaleHero
+    400036: mixamo:SA_Char_Survivor_FemalePyro
+    400038: mixamo:SA_Char_Survivor_FemaleSoldier
+    400040: mixamo:SA_Char_Survivor_FemaleTrenchcoat
+    400042: mixamo:SA_Char_Survivor_Hazard
+    400044: mixamo:SA_Char_Survivor_HoodedMan
+    400046: mixamo:SA_Char_Survivor_InjuredMan
+    400048: mixamo:SA_Char_Survivor_Male_01
+    400050: mixamo:SA_Char_Survivor_Male_02
+    400052: mixamo:SA_Char_Survivor_Male_03
+    400054: mixamo:SA_Char_Survivor_Male_04
+    400056: mixamo:SA_Char_Survivor_MaleHunter
+    400058: mixamo:SA_Char_Survivor_MaleTrenchcoat
+    400060: mixamo:SA_Char_Survivor_OldMan
+    400062: mixamo:SA_Char_Survivor_Prisoner
+    400064: mixamo:SA_Char_Survivor_RoadWorker
+    400066: mixamo:SA_Char_Survivor_Scout
+    400068: mixamo:SA_Char_Survivor_Sheriff
+    400070: mixamo:SA_Zombie_AirportSecurity
+    400072: mixamo:SA_Zombie_AirportWorker
+    400074: mixamo:SA_Zombie_Bellhop
+    400076: mixamo:SA_Zombie_Businessman
+    400078: mixamo:SA_Zombie_Cheerleader
+    400080: mixamo:SA_Zombie_Clown
+    400082: mixamo:SA_Zombie_Farmer
+    400084: mixamo:SA_Zombie_FarmersDaughter
+    400086: mixamo:SA_Zombie_Firefighter
+    400088: mixamo:SA_Zombie_FootballPlayer
+    400090: mixamo:SA_Zombie_Grandma
+    400092: mixamo:SA_Zombie_Hobo
+    400094: mixamo:SA_Zombie_Industrial
+    400096: mixamo:SA_Zombie_Mechanic
+    400098: mixamo:SA_Zombie_Mountie
+    400100: mixamo:SA_Zombie_Pilot
+    400102: mixamo:SA_Zombie_Pimp
+    400104: mixamo:SA_Zombie_Prisoner
+    400106: mixamo:SA_Zombie_Prostitute
+    400108: mixamo:SA_Zombie_Roadworker
+    400110: mixamo:SA_Zombie_Robber
+    400112: mixamo:SA_Zombie_Runner
+    400114: mixamo:SA_Zombie_Santa
+    400116: mixamo:SA_Zombie_Shopkeeper
+    400118: mixamo:SA_Zombie_Soldier
+    400120: mixamo:SA_Zombie_Streetman
+    400122: mixamo:SA_Zombie_Tourist
+    400124: mixamo:SA_Zombie_Trucker
+    400126: Neck_jnt
+    400128: //RootNode
+    400130: Shoulder_Left_jnt
+    400132: Shoulder_Right_jnt
+    400134: Spine_jnt
+    400136: Spine_jnt1
+    400138: Toe_Left_jnt
+    400140: Toe_Right_jnt
+    400142: UpperLeg_Left_jnt
+    400144: UpperLeg_Right_jnt
+    2300000: mixamo:SA_Char_Survivor_Biohazard
+    2300002: mixamo:SA_Char_Survivor_Businessman
+    2300004: mixamo:SA_Char_Survivor_Doctor
+    2300006: mixamo:SA_Char_Survivor_Farmer
+    2300008: mixamo:SA_Char_Survivor_FemaleHero
+    2300010: mixamo:SA_Char_Survivor_FemalePyro
+    2300012: mixamo:SA_Char_Survivor_FemaleSoldier
+    2300014: mixamo:SA_Char_Survivor_FemaleTrenchcoat
+    2300016: mixamo:SA_Char_Survivor_Hazard
+    2300018: mixamo:SA_Char_Survivor_HoodedMan
+    2300020: mixamo:SA_Char_Survivor_InjuredMan
+    2300022: mixamo:SA_Char_Survivor_Male_01
+    2300024: mixamo:SA_Char_Survivor_Male_02
+    2300026: mixamo:SA_Char_Survivor_Male_03
+    2300028: mixamo:SA_Char_Survivor_Male_04
+    2300030: mixamo:SA_Char_Survivor_MaleHunter
+    2300032: mixamo:SA_Char_Survivor_MaleTrenchcoat
+    2300034: mixamo:SA_Char_Survivor_OldMan
+    2300036: mixamo:SA_Char_Survivor_Prisoner
+    2300038: mixamo:SA_Char_Survivor_RoadWorker
+    2300040: mixamo:SA_Char_Survivor_Scout
+    2300042: mixamo:SA_Char_Survivor_Sheriff
+    2300044: mixamo:SA_Zombie_AirportSecurity
+    2300046: mixamo:SA_Zombie_AirportWorker
+    2300048: mixamo:SA_Zombie_Bellhop
+    2300050: mixamo:SA_Zombie_Businessman
+    2300052: mixamo:SA_Zombie_Cheerleader
+    2300054: mixamo:SA_Zombie_Clown
+    2300056: mixamo:SA_Zombie_Farmer
+    2300058: mixamo:SA_Zombie_FarmersDaughter
+    2300060: mixamo:SA_Zombie_Firefighter
+    2300062: mixamo:SA_Zombie_FootballPlayer
+    2300064: mixamo:SA_Zombie_Grandma
+    2300066: mixamo:SA_Zombie_Hobo
+    2300068: mixamo:SA_Zombie_Industrial
+    2300070: mixamo:SA_Zombie_Mechanic
+    2300072: mixamo:SA_Zombie_Mountie
+    2300074: mixamo:SA_Zombie_Pilot
+    2300076: mixamo:SA_Zombie_Pimp
+    2300078: mixamo:SA_Zombie_Prisoner
+    2300080: mixamo:SA_Zombie_Prostitute
+    2300082: mixamo:SA_Zombie_Roadworker
+    2300084: mixamo:SA_Zombie_Robber
+    2300086: mixamo:SA_Zombie_Runner
+    2300088: mixamo:SA_Zombie_Santa
+    2300090: mixamo:SA_Zombie_Shopkeeper
+    2300092: mixamo:SA_Zombie_Soldier
+    2300094: mixamo:SA_Zombie_Streetman
+    2300096: mixamo:SA_Zombie_Tourist
+    2300098: mixamo:SA_Zombie_Trucker
+    3300000: mixamo:SA_Char_Survivor_Biohazard
+    3300002: mixamo:SA_Char_Survivor_Businessman
+    3300004: mixamo:SA_Char_Survivor_Doctor
+    3300006: mixamo:SA_Char_Survivor_Farmer
+    3300008: mixamo:SA_Char_Survivor_FemaleHero
+    3300010: mixamo:SA_Char_Survivor_FemalePyro
+    3300012: mixamo:SA_Char_Survivor_FemaleSoldier
+    3300014: mixamo:SA_Char_Survivor_FemaleTrenchcoat
+    3300016: mixamo:SA_Char_Survivor_Hazard
+    3300018: mixamo:SA_Char_Survivor_HoodedMan
+    3300020: mixamo:SA_Char_Survivor_InjuredMan
+    3300022: mixamo:SA_Char_Survivor_Male_01
+    3300024: mixamo:SA_Char_Survivor_Male_02
+    3300026: mixamo:SA_Char_Survivor_Male_03
+    3300028: mixamo:SA_Char_Survivor_Male_04
+    3300030: mixamo:SA_Char_Survivor_MaleHunter
+    3300032: mixamo:SA_Char_Survivor_MaleTrenchcoat
+    3300034: mixamo:SA_Char_Survivor_OldMan
+    3300036: mixamo:SA_Char_Survivor_Prisoner
+    3300038: mixamo:SA_Char_Survivor_RoadWorker
+    3300040: mixamo:SA_Char_Survivor_Scout
+    3300042: mixamo:SA_Char_Survivor_Sheriff
+    3300044: mixamo:SA_Zombie_AirportSecurity
+    3300046: mixamo:SA_Zombie_AirportWorker
+    3300048: mixamo:SA_Zombie_Bellhop
+    3300050: mixamo:SA_Zombie_Businessman
+    3300052: mixamo:SA_Zombie_Cheerleader
+    3300054: mixamo:SA_Zombie_Clown
+    3300056: mixamo:SA_Zombie_Farmer
+    3300058: mixamo:SA_Zombie_FarmersDaughter
+    3300060: mixamo:SA_Zombie_Firefighter
+    3300062: mixamo:SA_Zombie_FootballPlayer
+    3300064: mixamo:SA_Zombie_Grandma
+    3300066: mixamo:SA_Zombie_Hobo
+    3300068: mixamo:SA_Zombie_Industrial
+    3300070: mixamo:SA_Zombie_Mechanic
+    3300072: mixamo:SA_Zombie_Mountie
+    3300074: mixamo:SA_Zombie_Pilot
+    3300076: mixamo:SA_Zombie_Pimp
+    3300078: mixamo:SA_Zombie_Prisoner
+    3300080: mixamo:SA_Zombie_Prostitute
+    3300082: mixamo:SA_Zombie_Roadworker
+    3300084: mixamo:SA_Zombie_Robber
+    3300086: mixamo:SA_Zombie_Runner
+    3300088: mixamo:SA_Zombie_Santa
+    3300090: mixamo:SA_Zombie_Shopkeeper
+    3300092: mixamo:SA_Zombie_Soldier
+    3300094: mixamo:SA_Zombie_Streetman
+    3300096: mixamo:SA_Zombie_Tourist
+    3300098: mixamo:SA_Zombie_Trucker
+    4300000: mixamo:SA_Zombie_AirportSecurity
+    4300002: mixamo:SA_Zombie_AirportWorker
+    4300004: mixamo:SA_Zombie_Bellhop
+    4300006: mixamo:SA_Zombie_Businessman
+    4300008: mixamo:SA_Zombie_Cheerleader
+    4300010: mixamo:SA_Zombie_Clown
+    4300012: mixamo:SA_Zombie_Farmer
+    4300014: mixamo:SA_Zombie_FarmersDaughter
+    4300016: mixamo:SA_Zombie_Firefighter
+    4300018: mixamo:SA_Zombie_FootballPlayer
+    4300020: mixamo:SA_Zombie_Grandma
+    4300022: mixamo:SA_Zombie_Hobo
+    4300024: mixamo:SA_Zombie_Industrial
+    4300026: mixamo:SA_Zombie_Mechanic
+    4300028: mixamo:SA_Zombie_Mountie
+    4300030: mixamo:SA_Zombie_Pilot
+    4300032: mixamo:SA_Zombie_Pimp
+    4300034: mixamo:SA_Zombie_Prisoner
+    4300036: mixamo:SA_Zombie_Prostitute
+    4300038: mixamo:SA_Zombie_Roadworker
+    4300040: mixamo:SA_Zombie_Robber
+    4300042: mixamo:SA_Zombie_Runner
+    4300044: mixamo:SA_Zombie_Santa
+    4300046: mixamo:SA_Zombie_Shopkeeper
+    4300048: mixamo:SA_Zombie_Soldier
+    4300050: mixamo:SA_Zombie_Streetman
+    4300052: mixamo:SA_Zombie_Tourist
+    4300054: mixamo:SA_Zombie_Trucker
+    4300056: mixamo:SA_Char_Survivor_Biohazard
+    4300058: mixamo:SA_Char_Survivor_Businessman
+    4300060: mixamo:SA_Char_Survivor_Doctor
+    4300062: mixamo:SA_Char_Survivor_Farmer
+    4300064: mixamo:SA_Char_Survivor_FemaleHero
+    4300066: mixamo:SA_Char_Survivor_FemalePyro
+    4300068: mixamo:SA_Char_Survivor_FemaleSoldier
+    4300070: mixamo:SA_Char_Survivor_FemaleTrenchcoat
+    4300072: mixamo:SA_Char_Survivor_Hazard
+    4300074: mixamo:SA_Char_Survivor_InjuredMan
+    4300076: mixamo:SA_Char_Survivor_Male_01
+    4300078: mixamo:SA_Char_Survivor_Male_02
+    4300080: mixamo:SA_Char_Survivor_Male_03
+    4300082: mixamo:SA_Char_Survivor_Male_04
+    4300084: mixamo:SA_Char_Survivor_MaleHunter
+    4300086: mixamo:SA_Char_Survivor_HoodedMan
+    4300088: mixamo:SA_Char_Survivor_MaleTrenchcoat
+    4300090: mixamo:SA_Char_Survivor_OldMan
+    4300092: mixamo:SA_Char_Survivor_Prisoner
+    4300094: mixamo:SA_Char_Survivor_RoadWorker
+    4300096: mixamo:SA_Char_Survivor_Scout
+    4300098: mixamo:SA_Char_Survivor_Sheriff
+    7400000: Stabbing (1)
+    9500000: //RootNode
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: "Copied Avatar Rig Configuration mis-match. Errors found in
+      old project file will be treated as a warnings. Configuration mis-match will
+      be ignored, but current Configuration needs to be fixed:\n\tTransform 'Spine_jnt1'
+      not found in HumanDescription.\n"
+    animationImportErrors: 
+    animationImportWarnings: "\nClip 'mixamo.com' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar to
+      improve retargeting quality.\n\t'Spine_jnt1' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n"
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Stabbing (1)
+      takeName: mixamo.com
+      firstFrame: 0
+      lastFrame: 64
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human:
+    - boneName: Hips_jnt
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: UpperLeg_Left_jnt
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: UpperLeg_Right_jnt
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowerLeg_Left_jnt
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowerLeg_Right_jnt
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foot_Left_jnt
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foot_Right_jnt
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Spine_jnt
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Spine_jnt1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Neck_jnt
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Head_jnt
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Shoulder_Left_jnt
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Shoulder_Right_jnt
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Arm_Left_jnt
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Arm_Right_jnt
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Forearm_Left_jnt
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Forearm_Right_jnt
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hand_Left_jnt
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hand_Right_jnt
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Toe_Left_jnt
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Toe_Right_jnt
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Chest_jnt
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: SA_Character@Stabbing (1)(Clone)
+      parentName: 
+      position: {x: 0.09233896, y: -0.12291023, z: 0.032029998}
+      rotation: {x: -0.03628674, y: 0.4184259, z: 0.0351108, w: 0.90684634}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hips_jnt
+      parentName: SA_Character@Stabbing (1)(Clone)
+      position: {x: 0.0033072606, y: 1.1437585, z: 0.0094506815}
+      rotation: {x: 0.27935967, y: -0.27085978, z: -0.68225545, w: 0.6189675}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Spine_jnt
+      parentName: Hips_jnt
+      position: {x: -0.019049, y: 0, z: 0}
+      rotation: {x: 0.0005804741, y: 0.014458392, z: -0.009293886, w: 0.9998521}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Spine_jnt1
+      parentName: Spine_jnt
+      position: {x: -0.33607298, y: 0, z: 0}
+      rotation: {x: 0.006791177, y: 0.03363675, z: 0.009387588, w: 0.99936694}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Chest_jnt
+      parentName: Spine_jnt1
+      position: {x: -0.334253, y: 0, z: 0}
+      rotation: {x: 0.0070149945, y: 0.033460796, z: 0.009859783, w: 0.99936676}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Neck_jnt
+      parentName: Chest_jnt
+      position: {x: -0.228952, y: 0, z: 0}
+      rotation: {x: 0.04293206, y: 0.11633787, z: -0.018691277, w: 0.9921053}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Head_jnt
+      parentName: Neck_jnt
+      position: {x: -0.081674, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shoulder_Left_jnt
+      parentName: Chest_jnt
+      position: {x: -0.219108, y: -0.272742, z: 0.0076429998}
+      rotation: {x: 0.7721711, y: -0.6351616, z: -0.01558024, w: -0.008880964}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Arm_Left_jnt
+      parentName: Shoulder_Left_jnt
+      position: {x: 0.29249, y: 0, z: 0.0076429998}
+      rotation: {x: 0.97211826, y: 0.08259606, z: -0.027283832, w: -0.21776052}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Forearm_Left_jnt
+      parentName: Arm_Left_jnt
+      position: {x: 0.471188, y: 0, z: 0}
+      rotation: {x: 0.03024614, y: -0.001880685, z: -0.022139514, w: 0.99929553}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hand_Left_jnt
+      parentName: Forearm_Left_jnt
+      position: {x: 0.4403, y: 0, z: 0}
+      rotation: {x: 6.123234e-17, y: 1, z: 6.123234e-17, w: -6.123201e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shoulder_Right_jnt
+      parentName: Chest_jnt
+      position: {x: -0.219108, y: 0.272742, z: -0.0076429998}
+      rotation: {x: -0.6756983, y: 0.7371674, z: 0.0034642692, w: -0.0020444454}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Arm_Right_jnt
+      parentName: Shoulder_Right_jnt
+      position: {x: -0.29249, y: 0, z: -0.0076429998}
+      rotation: {x: -0.29739898, y: -0.01233269, z: -0.006140946, w: 0.95465386}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Forearm_Right_jnt
+      parentName: Arm_Right_jnt
+      position: {x: -0.47118998, y: 0, z: 0}
+      rotation: {x: 0.037211232, y: 0.015142797, z: -0.027196258, w: 0.9988225}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hand_Right_jnt
+      parentName: Forearm_Right_jnt
+      position: {x: -0.4403, y: 0, z: 0}
+      rotation: {x: 6.123234e-17, y: 1, z: -6.123234e-17, w: -6.1237094e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: UpperLeg_Left_jnt
+      parentName: Hips_jnt
+      position: {x: 0.128917, y: -0.221588, z: -0.017864}
+      rotation: {x: -0.050856158, y: -0.120742306, z: 0.98522645, w: 0.1102898}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LowerLeg_Left_jnt
+      parentName: UpperLeg_Left_jnt
+      position: {x: -0.374522, y: 0, z: 0}
+      rotation: {x: -0.66645247, y: -0.24822968, z: -0.20037223, w: 0.6738502}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foot_Left_jnt
+      parentName: LowerLeg_Left_jnt
+      position: {x: -0.388744, y: 0, z: 0}
+      rotation: {x: 0.37695068, y: 0.5313699, z: -0.38685462, w: 0.65260845}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Toe_Left_jnt
+      parentName: Foot_Left_jnt
+      position: {x: -0, y: -0.14973299, z: 0.219697}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: UpperLeg_Right_jnt
+      parentName: Hips_jnt
+      position: {x: 0.128917, y: 0.221588, z: 0.017864}
+      rotation: {x: 0.9894493, y: 0.118676916, z: 0.047733698, w: 0.06802473}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LowerLeg_Right_jnt
+      parentName: UpperLeg_Right_jnt
+      position: {x: 0.374522, y: 0, z: 0}
+      rotation: {x: -0.65392035, y: -0.20268768, z: -0.2094337, w: 0.6981715}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foot_Right_jnt
+      parentName: LowerLeg_Right_jnt
+      position: {x: 0.388744, y: 0, z: 0}
+      rotation: {x: 0.43830216, y: 0.5182804, z: -0.35098946, w: 0.6450451}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Toe_Right_jnt
+      parentName: Foot_Right_jnt
+      position: {x: -0.000003, y: 0.14973299, z: -0.219697}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamo:SA_Char_Survivor_Biohazard
+      parentName: SA_Character@Stabbing (1)(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamo:SA_Char_Survivor_Businessman
+      parentName: SA_Character@Stabbing (1)(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamo:SA_Char_Survivor_Doctor
+      parentName: SA_Character@Stabbing (1)(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamo:SA_Char_Survivor_Farmer
+      parentName: SA_Character@Stabbing (1)(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamo:SA_Char_Survivor_FemaleHero
+      parentName: SA_Character@Stabbing (1)(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamo:SA_Char_Survivor_FemalePyro
+      parentName: SA_Character@Stabbing (1)(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamo:SA_Char_Survivor_FemaleSoldier
+      parentName: SA_Character@Stabbing (1)(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamo:SA_Char_Survivor_FemaleTrenchcoat
+      parentName: SA_Character@Stabbing (1)(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamo:SA_Char_Survivor_Hazard
+      parentName: SA_Character@Stabbing (1)(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamo:SA_Char_Survivor_HoodedMan
+      parentName: SA_Character@Stabbing (1)(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamo:SA_Char_Survivor_InjuredMan
+      parentName: SA_Character@Stabbing (1)(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamo:SA_Char_Survivor_Male_01
+      parentName: SA_Character@Stabbing (1)(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamo:SA_Char_Survivor_Male_02
+      parentName: SA_Character@Stabbing (1)(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamo:SA_Char_Survivor_Male_03
+      parentName: SA_Character@Stabbing (1)(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamo:SA_Char_Survivor_Male_04
+      parentName: SA_Character@Stabbing (1)(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamo:SA_Char_Survivor_MaleHunter
+      parentName: SA_Character@Stabbing (1)(Clone)
+      position: {x: 0.000002, y: 1.498982, z: 0.13901}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamo:SA_Char_Survivor_MaleTrenchcoat
+      parentName: SA_Character@Stabbing (1)(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamo:SA_Char_Survivor_OldMan
+      parentName: SA_Character@Stabbing (1)(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamo:SA_Char_Survivor_Prisoner
+      parentName: SA_Character@Stabbing (1)(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamo:SA_Char_Survivor_RoadWorker
+      parentName: SA_Character@Stabbing (1)(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamo:SA_Char_Survivor_Scout
+      parentName: SA_Character@Stabbing (1)(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamo:SA_Char_Survivor_Sheriff
+      parentName: SA_Character@Stabbing (1)(Clone)
+      position: {x: 0.000002, y: 1.554861, z: 0.016343}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamo:SA_Zombie_AirportSecurity
+      parentName: SA_Character@Stabbing (1)(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamo:SA_Zombie_AirportWorker
+      parentName: SA_Character@Stabbing (1)(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamo:SA_Zombie_Bellhop
+      parentName: SA_Character@Stabbing (1)(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamo:SA_Zombie_Businessman
+      parentName: SA_Character@Stabbing (1)(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamo:SA_Zombie_Cheerleader
+      parentName: SA_Character@Stabbing (1)(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamo:SA_Zombie_Clown
+      parentName: SA_Character@Stabbing (1)(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamo:SA_Zombie_Farmer
+      parentName: SA_Character@Stabbing (1)(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamo:SA_Zombie_FarmersDaughter
+      parentName: SA_Character@Stabbing (1)(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamo:SA_Zombie_Firefighter
+      parentName: SA_Character@Stabbing (1)(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamo:SA_Zombie_FootballPlayer
+      parentName: SA_Character@Stabbing (1)(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamo:SA_Zombie_Grandma
+      parentName: SA_Character@Stabbing (1)(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamo:SA_Zombie_Hobo
+      parentName: SA_Character@Stabbing (1)(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamo:SA_Zombie_Industrial
+      parentName: SA_Character@Stabbing (1)(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamo:SA_Zombie_Mechanic
+      parentName: SA_Character@Stabbing (1)(Clone)
+      position: {x: 0.000002, y: 1.4437559, z: 0.047998}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamo:SA_Zombie_Mountie
+      parentName: SA_Character@Stabbing (1)(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamo:SA_Zombie_Pilot
+      parentName: SA_Character@Stabbing (1)(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamo:SA_Zombie_Pimp
+      parentName: SA_Character@Stabbing (1)(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamo:SA_Zombie_Prisoner
+      parentName: SA_Character@Stabbing (1)(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamo:SA_Zombie_Prostitute
+      parentName: SA_Character@Stabbing (1)(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamo:SA_Zombie_Roadworker
+      parentName: SA_Character@Stabbing (1)(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamo:SA_Zombie_Robber
+      parentName: SA_Character@Stabbing (1)(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamo:SA_Zombie_Runner
+      parentName: SA_Character@Stabbing (1)(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamo:SA_Zombie_Santa
+      parentName: SA_Character@Stabbing (1)(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamo:SA_Zombie_Shopkeeper
+      parentName: SA_Character@Stabbing (1)(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamo:SA_Zombie_Soldier
+      parentName: SA_Character@Stabbing (1)(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamo:SA_Zombie_Streetman
+      parentName: SA_Character@Stabbing (1)(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamo:SA_Zombie_Tourist
+      parentName: SA_Character@Stabbing (1)(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamo:SA_Zombie_Trucker
+      parentName: SA_Character@Stabbing (1)(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
