@@ -12,25 +12,58 @@ public class UIJoystick : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoi
 	private bool returnToStartPos;
 	private RectTransform parentRect;
 	private InputManager inputmanager;
+    public float timerToRun;
+    public GameObject player;
+    public Animator Anim;
+
+    private bool SecondTime;
+
+    public bool isUsing;
 
 	void OnEnable(){
 		inputmanager = GameObject.FindObjectOfType<InputManager>();
 		returnToStartPos = true;
 		handle.transform.SetParent(transform);
 		parentRect = GetComponent<RectTransform>();
+        this.player = GameObject.FindGameObjectWithTag("Player");
+        this.Anim = this.player.transform.GetChild(0).GetComponent<Animator>();
 	}
 		
 	void Update() {
 
 		//return to start position
 		if (returnToStartPos) {
-			if (handle.anchoredPosition.magnitude > Mathf.Epsilon) {
-				handle.anchoredPosition -= new Vector2 (handle.anchoredPosition.x * autoReturnSpeed, handle.anchoredPosition.y * autoReturnSpeed) * Time.deltaTime;
+            timerToRun = 0;
+            isUsing = false;
+            if (handle.anchoredPosition.magnitude > Mathf.Epsilon) {
+                SecondTime = true;
+                handle.anchoredPosition -= new Vector2 (handle.anchoredPosition.x * autoReturnSpeed, handle.anchoredPosition.y * autoReturnSpeed) * Time.deltaTime;
 				inputmanager.dir = Vector2.zero;
-			} else {
+            } else {
 				returnToStartPos = false;
-			}
-		}
+            }
+            try
+            {
+                this.Anim.SetBool("StartRunning", false);
+            }
+            catch { }
+            this.player.GetComponent<PlayerMovement>().walkSpeed = 3.0f;
+        }
+
+        if (!returnToStartPos && SecondTime)
+        {
+            isUsing = true;
+            timerToRun += Time.deltaTime;
+            if (this.timerToRun > 3)
+            {
+                try
+                {
+                    this.Anim.SetBool("StartRunning", true);
+                }
+                catch { }
+                this.player.GetComponent<PlayerMovement>().walkSpeed = 5.0f;
+            }
+        }
 	}
 
 	//return coordinates

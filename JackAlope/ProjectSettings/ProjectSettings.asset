@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: JackAlopeGames
-  productName: AmericanPixelStreetBattle_BU_BVC01
+  productName: AmericanPixelStreetBattle_BU_BVC02
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -150,14 +150,14 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.JackAlopeGames.AmericanPixelStreetBattle_BU_BVC01
+    Android: com.JackAlopeGames.AmericanPixelStreetBattle_BU_BVC02
     Standalone: unity.DefaultCompany.BeatEmUpTemplate3D
     Tizen: com.Company.ProductName
     iOS: com.Company.ProductName
     tvOS: com.Company.ProductName
   buildNumber:
     iOS: 0
-  AndroidBundleVersionCode: 1
+  AndroidBundleVersionCode: 2
   AndroidMinSdkVersion: 16
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 1
@@ -245,8 +245,8 @@ PlayerSettings:
   AndroidTargetArchitectures: 5
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: 
-  AndroidKeyaliasName: 
+  AndroidKeystoreName: C:/Users/Andres/Documents/GitHub_LastVersions/Version01/JackAlope/user.keystore
+  AndroidKeyaliasName: jackalopegames
   AndroidTVCompatibility: 1
   AndroidIsGame: 1
   AndroidEnableTango: 0

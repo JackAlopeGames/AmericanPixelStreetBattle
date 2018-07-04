@@ -1,4 +1,6 @@
 ﻿using UnityEngine;
+using UnityEngine.Analytics;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(Rigidbody))]
 public class HealthPickup : MonoBehaviour {
@@ -27,29 +29,47 @@ public class HealthPickup : MonoBehaviour {
 
 	//add health to player
 	void AddHealthToPlayer(GameObject player){
-		HealthSystem hs = player.GetComponent<HealthSystem> ();
+   
+            HealthSystem hs = player.GetComponent<HealthSystem>();
+        
+            if (hs != null)
+            {
 
-		if (hs != null) {
+            //restore hp to unit
+                if (hs.ExtraHp > 0)
+                {
+                    hs.ExtraHp += 6;
+                    hs.SendUpdateEvent();
+            }
+            else
+                {
 
-			//restore hp to unit
-			hs.AddHealth(RestoreHP);
+                    hs.AddHealth(RestoreHP);
+                    Analytics.CustomEvent("HealthKit_PickedUp");
+                }
 
-		} else {
-			Debug.Log("no health system found on GameObject '" + player.gameObject.name + "'.");
-		}
+            }
+            else
+            {
+                Debug.Log("no health system found on GameObject '" + player.gameObject.name + "'.");
+            }
+  
 
-		//show pickup effect
-		if (pickupEffect != null) {
-			GameObject effect = GameObject.Instantiate (pickupEffect);
-			effect.transform.position = transform.position;
-		}
+            //show pickup effect
+            if (pickupEffect != null)
+            {
+                GameObject effect = GameObject.Instantiate(pickupEffect);
+                effect.transform.position = transform.position;
+            }
 
-		//play sfx
-		if (pickupSFX != "") {
-			GlobalAudioPlayer.PlaySFXAtPosition (pickupSFX, transform.position);
-		}
+            //play sfx
+            if (pickupSFX != "")
+            {
+                GlobalAudioPlayer.PlaySFXAtPosition(pickupSFX, transform.position);
+            }
 
-		Destroy(gameObject);
+            Destroy(gameObject);
+        
 	}
 
 	#if UNITY_EDITOR 

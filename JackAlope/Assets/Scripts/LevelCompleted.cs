@@ -13,6 +13,8 @@ public class LevelCompleted : MonoBehaviour {
 	
     public void NextLevel()
     {
+        GameObject.FindGameObjectWithTag("PoiintsManager").GetComponent<SavingPoints>().currentPoints = 0;
+        GlobalAudioPlayer.PlaySFX("ItemPickup");
         if (SceneManager.GetSceneByName("PhaseOne").isLoaded)
         {
             SceneManager.LoadScene("Level_1");
@@ -35,9 +37,13 @@ public class LevelCompleted : MonoBehaviour {
         }
         else if (SceneManager.GetSceneByName("Level_5").isLoaded)
         {
+            Destroy(GameObject.FindGameObjectWithTag("UI"));
+            Destroy(GameObject.FindGameObjectWithTag("AdWeapon"));
+            Destroy(GameObject.FindGameObjectWithTag("ExtraCheker"));
             SceneManager.LoadScene("MainMenu");
         }
     }
+
 
 	// Update is called once per frame
 	void Update () {

@@ -15,13 +15,14 @@ public class UnitAnimator : MonoBehaviour {
     public Animator animator;
     [HideInInspector]
 	
-	private bool isplayer;
+	private bool isplayer, isPlayerSP;
 
 	//awake
 	void Awake() {
 		if(animator == null) animator = this.gameObject.GetComponent<Animator>();
         isplayer = transform.parent.CompareTag("Player");
-		currentDirection = DIRECTION.Right;
+        isPlayerSP = transform.parent.CompareTag("PlayerSP");
+        currentDirection = DIRECTION.Right;
 	}
 
 	//play an animation
@@ -60,7 +61,7 @@ public class UnitAnimator : MonoBehaviour {
 			transform.parent.GetComponent<PlayerCombat>().Ready ();
 		} else {
 			transform.parent.GetComponent<EnemyAI>().Ready();
-		}
+        }
 	}
 
 	//check if something was hit
@@ -84,7 +85,7 @@ public class UnitAnimator : MonoBehaviour {
 			} else {
 				Debug.Log ("no enemy AI component found on gameObject '" + transform.parent.name + "'.");
 			}
-		}
+        }
 	}
 
 	//show hit effect

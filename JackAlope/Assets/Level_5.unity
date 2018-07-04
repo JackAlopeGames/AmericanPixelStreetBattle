@@ -114,47 +114,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &3104882
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 3104883}
-  - component: {fileID: 3104884}
-  m_Layer: 11
-  m_Name: Collider1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 1
-  m_IsActive: 1
---- !u!4 &3104883
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 3104882}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.14, y: 4.186, z: -4.77}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1080314071}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &3104884
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 3104882}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 88.26608, y: 10, z: 1}
-  m_Center: {x: -19.133041, y: 0, z: 0}
 --- !u!1001 &8254566
 Prefab:
   m_ObjectHideFlags: 0
@@ -1759,47 +1718,6 @@ Transform:
   m_Father: {fileID: 610372416}
   m_RootOrder: 133
   m_LocalEulerAnglesHint: {x: 0, y: -25.364, z: 0}
---- !u!1 &111063788
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 111063789}
-  - component: {fileID: 111063790}
-  m_Layer: 11
-  m_Name: Ground
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &111063789
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 111063788}
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0.7071068, w: 0}
-  m_LocalPosition: {x: -2.63, y: 0, z: -1.61}
-  m_LocalScale: {x: 45, y: 10, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1080314071}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 90, y: 180, z: 0}
---- !u!65 &111063790
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 111063788}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.025845, y: 1.0000002, z: 1}
-  m_Center: {x: 0.51291996, y: 1.7763583e-16, z: 0.5}
 --- !u!1001 &119839586
 Prefab:
   m_ObjectHideFlags: 0
@@ -2002,7 +1920,7 @@ Transform:
   m_LocalScale: {x: 1.7641959, y: 1.7641964, z: 1.7641964}
   m_Children: []
   m_Father: {fileID: 1792454640}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &121945082
 MonoBehaviour:
@@ -2460,7 +2378,7 @@ GameObject:
   - component: {fileID: 178530717}
   m_Layer: 14
   m_Name: AreaRestrictor
-  m_TagString: Untagged
+  m_TagString: Restrictors
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2528,39 +2446,26 @@ MonoBehaviour:
   rb: {fileID: 183248376}
   capsule: {fileID: 183248377}
   AttackList:
-  - animTrigger: Attack1
+  - animTrigger: BossAttack5
+    damage: 4
+    duration: 1.5
+    comboResetTime: 0.5
+    hitSFX: DefaultHit
+    knockDown: 1
+    slowMotionEffect: 0
+    DefenceOverride: 0
+    isGroundAttack: 0
+    CollSize: 1
+    collDistance: 0.8
+    collHeight: 1.4
+    inflictor: {fileID: 0}
+  - animTrigger: BossAttack5_1
     damage: 3
-    duration: 1
+    duration: 3
     comboResetTime: 0.5
     hitSFX: DefaultHit
-    knockDown: 0
-    slowMotionEffect: 1
-    DefenceOverride: 0
-    isGroundAttack: 0
-    CollSize: 1
-    collDistance: 0.8
-    collHeight: 1.4
-    inflictor: {fileID: 0}
-  - animTrigger: Attack2
-    damage: 4
-    duration: 1
-    comboResetTime: 0.5
-    hitSFX: DefaultHit
-    knockDown: 0
-    slowMotionEffect: 1
-    DefenceOverride: 0
-    isGroundAttack: 0
-    CollSize: 1
-    collDistance: 0.8
-    collHeight: 1.4
-    inflictor: {fileID: 0}
-  - animTrigger: Attack3
-    damage: 4
-    duration: 1
-    comboResetTime: 0.5
-    hitSFX: DefaultHit
-    knockDown: 0
-    slowMotionEffect: 1
+    knockDown: 1
+    slowMotionEffect: 0
     DefenceOverride: 0
     isGroundAttack: 0
     CollSize: 1
@@ -2568,7 +2473,7 @@ MonoBehaviour:
     collHeight: 1.4
     inflictor: {fileID: 0}
   PickRandomAttack: 1
-  hitZRange: 2
+  hitZRange: 3
   defendChance: 80
   hitRecoveryTime: 0.4
   standUpTime: 0.8
@@ -2580,19 +2485,19 @@ MonoBehaviour:
   pickARandomName: 0
   enemyNamesList: {fileID: 4900000, guid: 48faffacd763b514599640f2b52243d2, type: 3}
   enemyName: 'Boss: Rambo'
-  attackRangeDistance: 1.2
-  closeRangeDistance: 2.4
+  attackRangeDistance: 0.9
+  closeRangeDistance: 4
   midRangeDistance: 3.5
   farRangeDistance: 4.5
   RangeMarging: 1
-  walkSpeed: 1.2
-  walkBackwardSpeed: 1.2
+  walkSpeed: 1.8
+  walkBackwardSpeed: 1.61
   sightDistance: 100
-  attackInterval: 0
-  rotationSpeed: 10
+  attackInterval: 0.5
+  rotationSpeed: 15
   lookaheadDistance: 0.4
   ignoreCliffs: 0
-  KnockdownTimeout: 1.5
+  KnockdownTimeout: 0.8
   KnockdownUpForce: 4
   KnockbackForce: 3
   CollisionLayer:
@@ -3351,6 +3256,47 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9e9ebc73e7fde0a4ebc98af2bd42b3fe, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &242009248
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 242009249}
+  - component: {fileID: 242009250}
+  m_Layer: 11
+  m_Name: Collider3
+  m_TagString: Restrictors
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 1
+  m_IsActive: 1
+--- !u!4 &242009249
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 242009248}
+  m_LocalRotation: {x: 0, y: 0.6427876, z: 0, w: 0.7660445}
+  m_LocalPosition: {x: 16.15, y: 4.146, z: 1.31}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 922454651}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 80, z: 0}
+--- !u!65 &242009250
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 242009248}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 10, z: 1}
+  m_Center: {x: 2.42, y: 0, z: -1.2}
 --- !u!1001 &262320450
 Prefab:
   m_ObjectHideFlags: 0
@@ -9587,10 +9533,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LevelMusic: Music
   showMenuAtStart: HUD
-  playMusic: 1
+  playMusic: 0
   createUI: 1
   createInputManager: 1
-  createAudioPlayer: 1
+  createAudioPlayer: 0
   createGameCamera: 1
 --- !u!4 &368878805
 Transform:
@@ -9947,8 +9893,8 @@ MonoBehaviour:
   pickARandomName: 1
   enemyNamesList: {fileID: 4900000, guid: 48faffacd763b514599640f2b52243d2, type: 3}
   enemyName: 
-  attackRangeDistance: 1.4
-  closeRangeDistance: 2.4
+  attackRangeDistance: 0.9
+  closeRangeDistance: 4
   midRangeDistance: 3.5
   farRangeDistance: 4.5
   RangeMarging: 1
@@ -10256,7 +10202,7 @@ GameObject:
   - component: {fileID: 417818486}
   m_Layer: 14
   m_Name: AreaRestrictor
-  m_TagString: Untagged
+  m_TagString: Restrictors
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10376,8 +10322,8 @@ MonoBehaviour:
   pickARandomName: 1
   enemyNamesList: {fileID: 4900000, guid: 48faffacd763b514599640f2b52243d2, type: 3}
   enemyName: 
-  attackRangeDistance: 1.4
-  closeRangeDistance: 2.4
+  attackRangeDistance: 0.9
+  closeRangeDistance: 4
   midRangeDistance: 3.5
   farRangeDistance: 4.5
   RangeMarging: 1
@@ -10565,12 +10511,25 @@ Prefab:
     - target: {fileID: 114225054467775110, guid: d78222c3bb408be4d96a254010874f9e,
         type: 2}
       propertyPath: attackRangeDistance
-      value: 1.4
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 114225054467775110, guid: d78222c3bb408be4d96a254010874f9e,
         type: 2}
       propertyPath: sightDistance
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 114225054467775110, guid: d78222c3bb408be4d96a254010874f9e,
+        type: 2}
+      propertyPath: closeRangeDistance
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4238774305760492, guid: d78222c3bb408be4d96a254010874f9e, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4640834720441368, guid: d78222c3bb408be4d96a254010874f9e, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d78222c3bb408be4d96a254010874f9e, type: 2}
@@ -21918,8 +21877,8 @@ MonoBehaviour:
   pickARandomName: 1
   enemyNamesList: {fileID: 4900000, guid: 48faffacd763b514599640f2b52243d2, type: 3}
   enemyName: 
-  attackRangeDistance: 1.4
-  closeRangeDistance: 2.4
+  attackRangeDistance: 0.9
+  closeRangeDistance: 4
   midRangeDistance: 3.5
   farRangeDistance: 4.5
   RangeMarging: 1
@@ -22338,7 +22297,7 @@ Transform:
   - {fileID: 2020528122}
   - {fileID: 262320451}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &614386296
 GameObject:
@@ -22372,7 +22331,7 @@ Transform:
   - {fileID: 1723725416}
   - {fileID: 189504294}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &625458106
 GameObject:
@@ -22842,7 +22801,7 @@ GameObject:
   - component: {fileID: 651462177}
   m_Layer: 14
   m_Name: AreaRestrictor
-  m_TagString: Untagged
+  m_TagString: Restrictors
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27470,11 +27429,24 @@ Prefab:
     - target: {fileID: 114225054467775110, guid: d78222c3bb408be4d96a254010874f9e,
         type: 2}
       propertyPath: attackRangeDistance
-      value: 1.4
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 1939893826906624, guid: d78222c3bb408be4d96a254010874f9e, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114225054467775110, guid: d78222c3bb408be4d96a254010874f9e,
+        type: 2}
+      propertyPath: closeRangeDistance
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4640834720441368, guid: d78222c3bb408be4d96a254010874f9e, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4238774305760492, guid: d78222c3bb408be4d96a254010874f9e, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d78222c3bb408be4d96a254010874f9e, type: 2}
@@ -27489,47 +27461,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4358615561079590, guid: d78222c3bb408be4d96a254010874f9e,
     type: 2}
   m_PrefabInternal: {fileID: 662015980}
---- !u!1 &678380875
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 678380876}
-  - component: {fileID: 678380877}
-  m_Layer: 11
-  m_Name: Collider3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 1
-  m_IsActive: 1
---- !u!4 &678380876
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 678380875}
-  m_LocalRotation: {x: 0, y: 0.6427876, z: 0, w: 0.7660445}
-  m_LocalPosition: {x: 16.15, y: 4.146, z: -0.26}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1080314071}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 80, z: 0}
---- !u!65 &678380877
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 678380875}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 10, y: 10, z: 1}
-  m_Center: {x: 2.42, y: 0, z: -1.2}
 --- !u!1001 &684433979
 Prefab:
   m_ObjectHideFlags: 0
@@ -28170,7 +28101,7 @@ MonoBehaviour:
     type: 2}
   orientToImpactDir: 1
   spawnItem: {fileID: 1448244365320500, guid: 4bdf5d1286d0b71438ccfa7edfda52eb, type: 2}
-  spawnChance: 0
+  spawnChance: 10
   destroyOnHit: 1
 --- !u!136 &738951637
 CapsuleCollider:
@@ -33392,7 +33323,7 @@ Transform:
   - {fileID: 1220515039}
   - {fileID: 183248378}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &769432270 stripped
 Transform:
@@ -33659,8 +33590,8 @@ MonoBehaviour:
   pickARandomName: 1
   enemyNamesList: {fileID: 4900000, guid: 48faffacd763b514599640f2b52243d2, type: 3}
   enemyName: 
-  attackRangeDistance: 1.4
-  closeRangeDistance: 2.4
+  attackRangeDistance: 0.9
+  closeRangeDistance: 4
   midRangeDistance: 3.5
   farRangeDistance: 4.5
   RangeMarging: 1
@@ -35093,8 +35024,8 @@ MonoBehaviour:
   pickARandomName: 1
   enemyNamesList: {fileID: 4900000, guid: 48faffacd763b514599640f2b52243d2, type: 3}
   enemyName: 
-  attackRangeDistance: 1.4
-  closeRangeDistance: 2.4
+  attackRangeDistance: 0.9
+  closeRangeDistance: 4
   midRangeDistance: 3.5
   farRangeDistance: 4.5
   RangeMarging: 1
@@ -35188,6 +35119,39 @@ Transform:
   - {fileID: 348974105}
   m_Father: {fileID: 768376751}
   m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &922454650
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 922454651}
+  m_Layer: 0
+  m_Name: LevelColliders
+  m_TagString: LevelColliders
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &922454651
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 922454650}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1566663404}
+  - {fileID: 1680750414}
+  - {fileID: 242009249}
+  - {fileID: 1664904182}
+  - {fileID: 1795841949}
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &924533263 stripped
 Transform:
@@ -35770,8 +35734,8 @@ MonoBehaviour:
   pickARandomName: 1
   enemyNamesList: {fileID: 4900000, guid: 48faffacd763b514599640f2b52243d2, type: 3}
   enemyName: 
-  attackRangeDistance: 1.4
-  closeRangeDistance: 2.4
+  attackRangeDistance: 0.9
+  closeRangeDistance: 4
   midRangeDistance: 3.5
   farRangeDistance: 4.5
   RangeMarging: 1
@@ -37340,39 +37304,6 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 406490, guid: b83683c40c7a1d143b84171f2c2fc5c5, type: 2}
   m_PrefabInternal: {fileID: 1077074031}
---- !u!1 &1080314070
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1080314071}
-  m_Layer: 0
-  m_Name: LevelColliders
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1080314071
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1080314070}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 3104883}
-  - {fileID: 1244629609}
-  - {fileID: 678380876}
-  - {fileID: 111063789}
-  - {fileID: 1115752807}
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1080573705
 GameObject:
   m_ObjectHideFlags: 0
@@ -42409,47 +42340,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b83683c40c7a1d143b84171f2c2fc5c5, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1115752806
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1115752807}
-  - component: {fileID: 1115752808}
-  m_Layer: 11
-  m_Name: Collider3 (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 1
-  m_IsActive: 1
---- !u!4 &1115752807
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1115752806}
-  m_LocalRotation: {x: -0, y: 0.6415055, z: -0, w: 0.7671186}
-  m_LocalPosition: {x: -62.1, y: 4.146, z: 0.83}
-  m_LocalScale: {x: 1.0000002, y: 1, z: 1.0000002}
-  m_Children: []
-  m_Father: {fileID: 1080314071}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 79.80801, z: 0}
---- !u!65 &1115752808
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1115752806}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 10, y: 10, z: 1}
-  m_Center: {x: 2.42, y: 0, z: -1.2}
 --- !u!1001 &1116870933
 Prefab:
   m_ObjectHideFlags: 0
@@ -42672,8 +42562,8 @@ MonoBehaviour:
   pickARandomName: 1
   enemyNamesList: {fileID: 4900000, guid: 48faffacd763b514599640f2b52243d2, type: 3}
   enemyName: 
-  attackRangeDistance: 1.4
-  closeRangeDistance: 2.4
+  attackRangeDistance: 0.9
+  closeRangeDistance: 4
   midRangeDistance: 3.5
   farRangeDistance: 4.5
   RangeMarging: 1
@@ -43575,8 +43465,8 @@ MonoBehaviour:
   pickARandomName: 1
   enemyNamesList: {fileID: 4900000, guid: 48faffacd763b514599640f2b52243d2, type: 3}
   enemyName: Nico
-  attackRangeDistance: 1.4
-  closeRangeDistance: 2.4
+  attackRangeDistance: 0.9
+  closeRangeDistance: 4
   midRangeDistance: 3.5
   farRangeDistance: 4.5
   RangeMarging: 1
@@ -43733,47 +43623,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 58b12ff97d6a848479b380cbef741e10, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1244629608
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1244629609}
-  - component: {fileID: 1244629610}
-  m_Layer: 11
-  m_Name: Collider2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 1
-  m_IsActive: 1
---- !u!4 &1244629609
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1244629608}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.98, y: 4.146, z: 1.58}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1080314071}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1244629610
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1244629608}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 89.73273, y: 10, z: 1}
-  m_Center: {x: -19.866356, y: 0, z: 0}
 --- !u!1 &1255139209
 GameObject:
   m_ObjectHideFlags: 0
@@ -43864,8 +43713,8 @@ MonoBehaviour:
   pickARandomName: 1
   enemyNamesList: {fileID: 4900000, guid: 48faffacd763b514599640f2b52243d2, type: 3}
   enemyName: 
-  attackRangeDistance: 1.4
-  closeRangeDistance: 2.4
+  attackRangeDistance: 0.9
+  closeRangeDistance: 4
   midRangeDistance: 3.5
   farRangeDistance: 4.5
   RangeMarging: 1
@@ -44205,6 +44054,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delta: 3
   speed: 0.5
+--- !u!1001 &1267359314
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4379341370567402, guid: e3b40ebede903ec49b49ad94465f86cd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -8.660132
+      objectReference: {fileID: 0}
+    - target: {fileID: 4379341370567402, guid: e3b40ebede903ec49b49ad94465f86cd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -4.739249
+      objectReference: {fileID: 0}
+    - target: {fileID: 4379341370567402, guid: e3b40ebede903ec49b49ad94465f86cd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -5.098093
+      objectReference: {fileID: 0}
+    - target: {fileID: 4379341370567402, guid: e3b40ebede903ec49b49ad94465f86cd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4379341370567402, guid: e3b40ebede903ec49b49ad94465f86cd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4379341370567402, guid: e3b40ebede903ec49b49ad94465f86cd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4379341370567402, guid: e3b40ebede903ec49b49ad94465f86cd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4379341370567402, guid: e3b40ebede903ec49b49ad94465f86cd, type: 2}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: e3b40ebede903ec49b49ad94465f86cd, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1284864539
 GameObject:
   m_ObjectHideFlags: 0
@@ -44720,8 +44611,8 @@ MonoBehaviour:
   pickARandomName: 1
   enemyNamesList: {fileID: 4900000, guid: 48faffacd763b514599640f2b52243d2, type: 3}
   enemyName: 
-  attackRangeDistance: 1.4
-  closeRangeDistance: 2.4
+  attackRangeDistance: 0.9
+  closeRangeDistance: 4
   midRangeDistance: 3.5
   farRangeDistance: 4.5
   RangeMarging: 1
@@ -46960,6 +46851,47 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bc84f15e1d2513b4fa5acb98d26a16f7, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1566663403
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1566663404}
+  - component: {fileID: 1566663405}
+  m_Layer: 11
+  m_Name: Collider1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 1
+  m_IsActive: 1
+--- !u!4 &1566663404
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1566663403}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.14, y: 4.186, z: -6.35}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 922454651}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1566663405
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1566663403}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 88.26608, y: 10, z: 1}
+  m_Center: {x: -19.133041, y: 0, z: 0}
 --- !u!1 &1569719720
 GameObject:
   m_ObjectHideFlags: 0
@@ -47265,7 +47197,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 487252, guid: 17f67ce86fbcc4040bd07f5847372841, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 487252, guid: 17f67ce86fbcc4040bd07f5847372841, type: 2}
       propertyPath: m_LocalScale.x
@@ -48312,8 +48244,8 @@ MonoBehaviour:
   pickARandomName: 1
   enemyNamesList: {fileID: 4900000, guid: 48faffacd763b514599640f2b52243d2, type: 3}
   enemyName: 
-  attackRangeDistance: 1.4
-  closeRangeDistance: 2.4
+  attackRangeDistance: 0.9
+  closeRangeDistance: 4
   midRangeDistance: 3.5
   farRangeDistance: 4.5
   RangeMarging: 1
@@ -48831,8 +48763,8 @@ MonoBehaviour:
   pickARandomName: 1
   enemyNamesList: {fileID: 4900000, guid: 48faffacd763b514599640f2b52243d2, type: 3}
   enemyName: 
-  attackRangeDistance: 1.4
-  closeRangeDistance: 2.4
+  attackRangeDistance: 0.9
+  closeRangeDistance: 4
   midRangeDistance: 3.5
   farRangeDistance: 4.5
   RangeMarging: 1
@@ -49129,6 +49061,47 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.36837792, y: 0.0000017881393, z: -0.059862554}
     m_Extent: {x: 1.4135954, y: 1.6845057, z: 0.48420048}
   m_DirtyAABB: 0
+--- !u!1 &1664904181
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1664904182}
+  - component: {fileID: 1664904183}
+  m_Layer: 11
+  m_Name: Ground
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1664904182
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1664904181}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0.7071068, w: 0}
+  m_LocalPosition: {x: -2.63, y: 0, z: -1.61}
+  m_LocalScale: {x: 45, y: 10, z: 1}
+  m_Children: []
+  m_Father: {fileID: 922454651}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 90, y: 180, z: 0}
+--- !u!65 &1664904183
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1664904181}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.025845, y: 1.0000002, z: 1}
+  m_Center: {x: 0.51291996, y: 1.7763583e-16, z: 0.5}
 --- !u!1001 &1671432242
 Prefab:
   m_ObjectHideFlags: 0
@@ -49269,6 +49242,47 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 73ef0b63ffe19f94ab35e4475b345d70, type: 2}
   m_PrefabInternal: {fileID: 1676728586}
+--- !u!1 &1680750413
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1680750414}
+  - component: {fileID: 1680750415}
+  m_Layer: 11
+  m_Name: Collider2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 1
+  m_IsActive: 1
+--- !u!4 &1680750414
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1680750413}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.98, y: 4.146, z: 4.05}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 922454651}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1680750415
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1680750413}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 89.73273, y: 10, z: 1}
+  m_Center: {x: -19.866356, y: 0, z: 0}
 --- !u!1001 &1683434596
 Prefab:
   m_ObjectHideFlags: 0
@@ -49419,8 +49433,8 @@ MonoBehaviour:
   pickARandomName: 1
   enemyNamesList: {fileID: 4900000, guid: 48faffacd763b514599640f2b52243d2, type: 3}
   enemyName: Nico
-  attackRangeDistance: 1.4
-  closeRangeDistance: 2.4
+  attackRangeDistance: 0.9
+  closeRangeDistance: 4
   midRangeDistance: 3.5
   farRangeDistance: 4.5
   RangeMarging: 1
@@ -49756,8 +49770,8 @@ MonoBehaviour:
   pickARandomName: 1
   enemyNamesList: {fileID: 4900000, guid: 48faffacd763b514599640f2b52243d2, type: 3}
   enemyName: 
-  attackRangeDistance: 1.4
-  closeRangeDistance: 2.4
+  attackRangeDistance: 0.9
+  closeRangeDistance: 4
   midRangeDistance: 3.5
   farRangeDistance: 4.5
   RangeMarging: 1
@@ -50241,8 +50255,8 @@ MonoBehaviour:
   pickARandomName: 1
   enemyNamesList: {fileID: 4900000, guid: 48faffacd763b514599640f2b52243d2, type: 3}
   enemyName: 
-  attackRangeDistance: 1.4
-  closeRangeDistance: 2.4
+  attackRangeDistance: 0.9
+  closeRangeDistance: 4
   midRangeDistance: 3.5
   farRangeDistance: 4.5
   RangeMarging: 1
@@ -50668,8 +50682,8 @@ MonoBehaviour:
   pickARandomName: 1
   enemyNamesList: {fileID: 4900000, guid: 48faffacd763b514599640f2b52243d2, type: 3}
   enemyName: Nico
-  attackRangeDistance: 1.4
-  closeRangeDistance: 2.4
+  attackRangeDistance: 0.9
+  closeRangeDistance: 4
   midRangeDistance: 3.5
   farRangeDistance: 4.5
   RangeMarging: 1
@@ -50759,8 +50773,8 @@ Transform:
   m_LocalPosition: {x: -2.41, y: 0, z: 1.04}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1579363402}
   - {fileID: 121945081}
+  - {fileID: 1579363402}
   m_Father: {fileID: 768376751}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -50834,6 +50848,47 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 406490, guid: b83683c40c7a1d143b84171f2c2fc5c5, type: 2}
   m_PrefabInternal: {fileID: 1794102611}
+--- !u!1 &1795841948
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1795841949}
+  - component: {fileID: 1795841950}
+  m_Layer: 11
+  m_Name: Collider3 (1)
+  m_TagString: Restrictors
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 1
+  m_IsActive: 1
+--- !u!4 &1795841949
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1795841948}
+  m_LocalRotation: {x: -0, y: 0.6415055, z: -0, w: 0.7671186}
+  m_LocalPosition: {x: -62.1, y: 4.146, z: 1.3}
+  m_LocalScale: {x: 1.0000002, y: 1, z: 1.0000002}
+  m_Children: []
+  m_Father: {fileID: 922454651}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 79.80801, z: 0}
+--- !u!65 &1795841950
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1795841948}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 10, z: 1}
+  m_Center: {x: 2.42, y: 0, z: -1.2}
 --- !u!1001 &1797699460
 Prefab:
   m_ObjectHideFlags: 0
@@ -50927,7 +50982,7 @@ Prefab:
     - target: {fileID: 114225054467775110, guid: d78222c3bb408be4d96a254010874f9e,
         type: 2}
       propertyPath: attackRangeDistance
-      value: 1.4
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 1939893826906624, guid: d78222c3bb408be4d96a254010874f9e, type: 2}
       propertyPath: m_IsActive
@@ -50937,6 +50992,19 @@ Prefab:
         type: 2}
       propertyPath: sightDistance
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 114225054467775110, guid: d78222c3bb408be4d96a254010874f9e,
+        type: 2}
+      propertyPath: closeRangeDistance
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4640834720441368, guid: d78222c3bb408be4d96a254010874f9e, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4238774305760492, guid: d78222c3bb408be4d96a254010874f9e, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d78222c3bb408be4d96a254010874f9e, type: 2}
@@ -55469,7 +55537,7 @@ MonoBehaviour:
     type: 2}
   orientToImpactDir: 1
   spawnItem: {fileID: 1448244365320500, guid: 4bdf5d1286d0b71438ccfa7edfda52eb, type: 2}
-  spawnChance: 0
+  spawnChance: 100
   destroyOnHit: 1
 --- !u!136 &1821769443
 CapsuleCollider:
@@ -55928,7 +55996,7 @@ MonoBehaviour:
     type: 2}
   orientToImpactDir: 1
   spawnItem: {fileID: 1448244365320500, guid: 4bdf5d1286d0b71438ccfa7edfda52eb, type: 2}
-  spawnChance: 0
+  spawnChance: 10
   destroyOnHit: 1
 --- !u!136 &1843100815
 CapsuleCollider:
@@ -56189,7 +56257,7 @@ Transform:
   - {fileID: 273847789}
   - {fileID: 1261985267}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1891010743
 Prefab:
@@ -61447,7 +61515,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2006810632
 Prefab:
@@ -61542,7 +61610,7 @@ Prefab:
     - target: {fileID: 114225054467775110, guid: d78222c3bb408be4d96a254010874f9e,
         type: 2}
       propertyPath: attackRangeDistance
-      value: 1.4
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 114225054467775110, guid: d78222c3bb408be4d96a254010874f9e,
         type: 2}
@@ -61552,6 +61620,19 @@ Prefab:
     - target: {fileID: 1939893826906624, guid: d78222c3bb408be4d96a254010874f9e, type: 2}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114225054467775110, guid: d78222c3bb408be4d96a254010874f9e,
+        type: 2}
+      propertyPath: closeRangeDistance
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4238774305760492, guid: d78222c3bb408be4d96a254010874f9e, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4640834720441368, guid: d78222c3bb408be4d96a254010874f9e, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d78222c3bb408be4d96a254010874f9e, type: 2}
@@ -62538,7 +62619,7 @@ GameObject:
   - component: {fileID: 2104496913}
   m_Layer: 14
   m_Name: AreaRestrictor
-  m_TagString: Untagged
+  m_TagString: Restrictors
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62645,7 +62726,7 @@ GameObject:
   - component: {fileID: 2105897937}
   m_Layer: 14
   m_Name: AreaRestrictor
-  m_TagString: Untagged
+  m_TagString: Restrictors
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

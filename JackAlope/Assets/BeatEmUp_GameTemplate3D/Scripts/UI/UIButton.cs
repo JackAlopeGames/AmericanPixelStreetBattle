@@ -7,7 +7,7 @@ public class UIButton : MonoBehaviour, IPointerDownHandler, IPointerUpHandler {
 	public INPUTACTION actionDown;
 	public INPUTACTION actionUp;
 	public bool updateEveryFrame = false;
-	private bool pressed;
+	public bool pressed;
 
 	public void OnPointerDown(PointerEventData eventData){
 		InputManager.CombatInputEvent(actionDown);

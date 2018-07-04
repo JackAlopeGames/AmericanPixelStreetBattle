@@ -10,9 +10,10 @@ GameObject:
   - component: {fileID: 441444}
   - component: {fileID: 11433944}
   - component: {fileID: 8206434}
+  - component: {fileID: 114783582142566622}
   m_Layer: 0
   m_Name: AudioPlayer
-  m_TagString: Untagged
+  m_TagString: AudioPlayer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -363,6 +364,62 @@ MonoBehaviour:
     clip:
     - {fileID: 8300000, guid: b694c0b5441521746a2b5319cf14f694, type: 3}
     lastTimePlayed: 0
+  - name: POP
+    volume: 1
+    MinTimeBetweenCall: 0
+    loop: 0
+    clip:
+    - {fileID: 8300000, guid: 08207cdb50b918e4ea12822aa169e45c, type: 3}
+    lastTimePlayed: 0
+  - name: Reward
+    volume: 1
+    MinTimeBetweenCall: 0
+    loop: 0
+    clip:
+    - {fileID: 8300000, guid: 661943f6fb4df3d4f99c4a819aa2d0e4, type: 3}
+    lastTimePlayed: 0
+  - name: ScoreCount
+    volume: 1
+    MinTimeBetweenCall: 0
+    loop: 0
+    clip:
+    - {fileID: 8300000, guid: 7339bbd9414682f4c8b8e428944fc2a4, type: 3}
+    lastTimePlayed: 0
+  - name: SpecialAttack
+    volume: 0.8
+    MinTimeBetweenCall: 0
+    loop: 0
+    clip:
+    - {fileID: 8300000, guid: 71bbb197df8895c4ab425071c912bac7, type: 3}
+    lastTimePlayed: 0
+  - name: Electro
+    volume: 1
+    MinTimeBetweenCall: 0
+    loop: 0
+    clip:
+    - {fileID: 8300000, guid: 74ad16c2c5908c845af6e2d5a1022350, type: 3}
+    lastTimePlayed: 0
+  - name: Grenade
+    volume: 1
+    MinTimeBetweenCall: 0
+    loop: 0
+    clip:
+    - {fileID: 8300000, guid: 51e704de8784a944a8eb16978d321430, type: 3}
+    lastTimePlayed: 0
+  - name: Alert
+    volume: 1
+    MinTimeBetweenCall: 0
+    loop: 0
+    clip:
+    - {fileID: 8300000, guid: 91739184d901e434f820b82a0de3c321, type: 3}
+    lastTimePlayed: 0
+  - name: Victory
+    volume: 1
+    MinTimeBetweenCall: 0
+    loop: 0
+    clip:
+    - {fileID: 8300000, guid: 6566d37660dd8424fa401edaaa142e73, type: 3}
+    lastTimePlayed: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -374,3 +431,14 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 118890}
   m_IsPrefabParent: 1
+--- !u!114 &114783582142566622
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 118890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7408c3be90251347b3896ed6521afd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

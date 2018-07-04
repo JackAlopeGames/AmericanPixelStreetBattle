@@ -22,5 +22,10 @@ public class ColorTrans : MonoBehaviour {
             text.color = ColorTransition.Evaluate(t);
             
         }
+        if (button != null && button.gameObject.activeSelf)
+        {
+            float t = Mathf.PingPong(Time.time * speed, 1f);
+            button.GetComponent<Image>().color = ColorTransition.Evaluate(t);
+        }
     }
 }

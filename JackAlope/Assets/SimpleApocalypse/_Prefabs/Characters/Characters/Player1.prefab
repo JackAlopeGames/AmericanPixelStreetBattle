@@ -116,6 +116,7 @@ GameObject:
   - component: {fileID: 4533694458351814}
   - component: {fileID: 95097054022790826}
   - component: {fileID: 114183956548416280}
+  - component: {fileID: 114663553110614822}
   m_Layer: 0
   m_Name: SA_Character_MaleSurvivorHunter
   m_TagString: Untagged
@@ -2355,6 +2356,24 @@ MonoBehaviour:
   HitEffect: {fileID: 115594, guid: efd3011863918584d94591e177fa8d29, type: 2}
   DefendEffect: {fileID: 194486, guid: 103ca3ac1720c8445935db20b30e3305, type: 2}
   animator: {fileID: 0}
+--- !u!114 &114663553110614822
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1095202270619500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f9f0ed4c4ad5df47ada7a9548e46856, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Grenade: {fileID: 1766122017697278, guid: 7df2982e32fb16a4385f4959344ab8f2, type: 2}
+  clone: {fileID: 0}
+  clone2: {fileID: 0}
+  clone3: {fileID: 0}
+  hand: {fileID: 1410195189372716}
+  force: 0
+  time: 0
 --- !u!114 &114684493641586776
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2412,6 +2431,19 @@ MonoBehaviour:
     duration: 0.5
     comboResetTime: 1
     hitSFX: HeavyHit
+    knockDown: 0
+    slowMotionEffect: 0
+    DefenceOverride: 0
+    isGroundAttack: 0
+    CollSize: 1
+    collDistance: 0.76
+    collHeight: 1.17
+    inflictor: {fileID: 1254180878920826}
+  - animTrigger: Punch4
+    damage: 2
+    duration: 2
+    comboResetTime: 1.5
+    hitSFX: HeavyHit
     knockDown: 1
     slowMotionEffect: 0
     DefenceOverride: 0
@@ -2439,8 +2471,21 @@ MonoBehaviour:
     duration: 0.45
     comboResetTime: 0.35
     hitSFX: HeavyHit
+    knockDown: 0
+    slowMotionEffect: 0
+    DefenceOverride: 0
+    isGroundAttack: 0
+    CollSize: 1
+    collDistance: 0.96
+    collHeight: 1.15
+    inflictor: {fileID: 0}
+  - animTrigger: Kick3
+    damage: 2
+    duration: 2
+    comboResetTime: 1.2
+    hitSFX: HeavyHit
     knockDown: 1
-    slowMotionEffect: 1
+    slowMotionEffect: 0
     DefenceOverride: 0
     isGroundAttack: 0
     CollSize: 1
